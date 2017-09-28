@@ -1,78 +1,82 @@
-
 body {
-    margin: 0;
-  }
-  
-  
-  .first-box {
-    padding: 80px 0px 40px 00px;
-  }
-  
-  .banner {
-    padding-top: 160px; 
-    margin: 0 40px 0 40px;
-    background: linear-gradient(to right, #FFFFFF, white, rgba(255, 255, 255, 0.47), transparent, transparent), url('https://i.imgur.com/1vJrTS4.jpg') no-repeat center; 
-    background-size: cover; 
-  
-  }
-  
-  .banner-img {
-    padding: 50px 130px 0px 210px;
-  }
-  
-  .logo-name {
-    font-size: 13px;
-    letter-spacing: 20px;
-    padding-left: 165px;
-    margin-top: 1;
-    padding-bottom: 90px;
-    color: #5D5A5A;
-    font-weight: lighter;
-  }
-  
-  .Choose {
-    text-align: center;
-    font-size: 8px;
-    letter-spacing: 6px;
-    font-weight: bold;
-    padding-top: 20px;
-  }
-  
-  
-  .Pic {
-    width: 400px;
-    height: 250px;
-    margin-right: 40px;
-    margin-left: 10px;
-    margin-bottom: 30px;
-    position: relative;
-      background-color: #FFF;
-      border-radius: 2px;
-      -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.2);
-              box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.2);
-  }
-  
-  
-  .Pictures {
-    width: 100%;
-    height: auto;
-    display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 40px;  
-  }
-  
-  /* .greypic {
-    border: 2px solid #363434;
-    background: linear-gradient(to right, #FFFFFF, white, rgba(255, 255, 255, 0.47), transparent, transparent), url('https://i.imgur.com/Meigvk4.jpg') no-repeat center; 
-    background-size: cover; 
-  } */
-   
-  a {
-    color: #565252;
-    text-decoration: none;
-    font-size: 11px;
-    letter-spacing: 4px;
-    font-weight: lighter;
-  }
+  margin: 0;
+}
+
+
+.first-box {
+  padding: 80px 0px 40px 0px;
+}
+
+.banner {
+  padding-top: 160px; 
+  margin: 0 40px 0 40px;
+  background: linear-gradient(to right, #FFFFFF, white, rgba(255, 255, 255, 0.47), transparent, transparent), url('https://i.imgur.com/tyxX2Y1.jpg') no-repeat center; 
+  background-size: cover; 
+
+}
+
+.banner-img {
+  padding: 50px 130px 0px 210px;
+}
+
+.logo-name {
+  font-size: 13px;
+  letter-spacing: 20px;
+  padding-left: 165px;
+  margin-top: 1;
+  padding-bottom: 90px;
+  color: #5D5A5A;
+  font-weight: lighter;
+}
+
+.Choose {
+  text-align: center;
+  font-size: 8px;
+  letter-spacing: 6px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+
+.Pic {
+  width: 400px;
+  height: 250px;
+  margin-right: 40px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  position: relative;
+    background-color: #FFF;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.2);
+}
+
+
+.Pictures {
+  width: 100%;
+  height: auto;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 40px;  
+}
+
+/* .greypic {
+  border: 2px solid #363434;
+  background: linear-gradient(to right, #FFFFFF, white, rgba(255, 255, 255, 0.47), transparent, transparent), url('https://i.imgur.com/Meigvk4.jpg') no-repeat center; 
+  background-size: cover; 
+} */
+ 
+a {
+  color: #565252;
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 4px;
+  font-weight: lighter;
+}
+
+.scroll-contain {
+  width: 100%;
+  text-align: center;
+}

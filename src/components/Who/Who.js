@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import './What.css';
+import './Who.css';
 import Footer from '../Footer/Footer';
 
-class What extends Component {
+
+class Who extends Component {
   // constructor () {
   //   super () 
   
@@ -16,10 +17,9 @@ class What extends Component {
 
     return (
 
-<div className= 'hi'>
+<div className= 'hey'>
   <div className='team-container'>
-    <div className="team"> 
-      <h1 className='h1'>OUR TEAM</h1>
+    <div className="team"> OUR TEAM
       <img src='https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-128.png' className='img1' alt=''/>
       <img src='https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-128.png' className='img2' alt=''/>
       <img src='https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-128.png'className='img3' alt=''/>
@@ -34,16 +34,15 @@ class What extends Component {
 </div>
 </div>
 </div>
-<div className='break'>
-      </div>
 <Footer />
 </div>
+
 
   );
   }
 }
 
-export default What;
+export default Who;
 
 
 

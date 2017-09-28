@@ -16,8 +16,13 @@ class Contacts extends Component {
 
     return (
 
-<div className= 'hi'>
-    <h1>CONTACTS PAGE</h1>
+<div className= 'Contacts'>
+<iframe
+  width="100%"
+  height="350"
+  frameborder="0"
+  src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD8lEgqTZPBwI4VRUM6YoGc8_S6lvziCSc&q=Salt+Lake+City,+UT/" allowfullscreen>
+</iframe>
 </div>
 
   );

@@ -38,7 +38,6 @@ class Home extends Component {
 </div>
 <div className="Pic">
 <img className = 'firstpic' src='https://i.imgur.com/UC3vSRO.jpg' width='100%' height='100%' alt=''/>
-
 </div>
 <div className="Pic">
 <img className = 'firstpic' src='https://i.imgur.com/nzHdZA3.jpg' width='100%' height='100%' alt=''/>
@@ -47,6 +46,9 @@ class Home extends Component {
 <div className="Pic">
 <img className = 'firstpic' src='https://i.imgur.com/keZ7Txh.jpg' width='100%' height='100%' alt=''/>
 </div>
+<div className='scroll-contain'>
+  <a href="top" className='scroll'>scroll to top</a>
+  </div>
   </div>
   < Footer />
 </div>

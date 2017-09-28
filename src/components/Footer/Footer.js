@@ -16,10 +16,7 @@ class Footer extends Component {
 
     return (
 
-<div className= 'App'>
-<div className='scroll-contain'>
-  <a href="top" className='scroll'>scroll to top</a>
-  </div>
+<div className= 'Footer'>
 <div className='footer-container'>
     <div className='footer'>
       <div className='footer-contacts'> 

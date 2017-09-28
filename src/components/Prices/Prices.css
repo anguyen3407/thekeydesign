@@ -1,0 +1,108 @@
+.Prices {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+    align-content: flex-start;
+}
+
+.app-container {
+    width: 80%;
+    height: 280px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+    align-content: flex-start;
+    padding-top:30px;
+}
+
+.basic-container {
+    border: 1px solid #848181;
+    width: 50%;
+    height: 340px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+    align-items: center;
+    letter-spacing: 2px;
+    line-height: 40px;
+    color: #5C5A5A;
+}
+
+.receipt {
+    border: 1px solid #848181;
+    width: 40%;
+    height: 500px; 
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;;
+}
+
+.receipt-background {
+    width: 95%;
+    height: 85%;
+    background-color: rgba(212, 208, 208, 0.30);
+    margin-top: 20px;
+}
+
+.second-container {
+    width: 80%;
+    height: 580px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+.add-ons {
+    width: 50%;
+    height: 170px;
+    margin: 90px 30px 0px 30px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+    line-height: 40px;
+    font-size: 13px;
+    color: #434141;
+}
+
+.full-container {
+    border: 1px solid #848181;
+    width: 50%;
+    height: 260px;
+    margin: 15px 30px 0px 30px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+    align-items: center;
+    letter-spacing: 2px;
+    line-height: 40px;
+    color: #5C5A5A;
+}
+
+.checkout-btn {
+    margin: 20px;
+    width: 30%;
+    height: 5%
+}
+
+.add-btn-container {
+margin-left: 200px;
+}
+
+.addToCart-btn {
+   width: 200%; 
+   height: 25px;
+}
+
