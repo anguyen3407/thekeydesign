@@ -5,7 +5,8 @@ const express = require('express')
 // , stripe = require('stripe')('sk_test_nJIKYXKLVHBFK8QmfdDak42R')
 , app =  module.exports = express()
 , session = require('express-session')
-, massive = require('massive');
+, massive = require('massive')
+, ctrl = require('../src/controller/productController');
 
 require ('dotenv').config();
 
@@ -54,10 +55,11 @@ return res.sendStatus(200);
 });
 });
 
-app.get('/api/product/1', (req, res) => 
-req.app.get('db').get_product().then(product => {
-  res.status(200).send(product);
-}) )
+app.get('/api/product/basic', ctrl.getProductBasic);
+app.get('/api/product/drone', ctrl.getProductDrone);
+app.get('/api/product/houseCleaning', ctrl.getProductHouseCleaning);
+app.get('/api/product/standard', ctrl.getProductStandard);
+app.get('/api/product/twilight', ctrl.getProductTwilight);
 
 
 

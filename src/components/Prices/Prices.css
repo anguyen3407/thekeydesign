@@ -21,7 +21,7 @@
 .basic-container {
     border: 1px solid #848181;
     width: 50%;
-    height: 340px;
+    height: 450px;
     display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -30,6 +30,10 @@
     letter-spacing: 2px;
     line-height: 40px;
     color: #5C5A5A;
+}
+
+.includes {
+ margin-left: 20px;
 }
 
 .receipt {
@@ -64,7 +68,7 @@
 .add-ons {
     width: 50%;
     height: 170px;
-    margin: 90px 30px 0px 30px;
+    margin: 180px 30px 0px 30px;
     display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;

@@ -1,0 +1,117 @@
+.Contacts {
+}
+
+.emptyspace {
+    width: 100%;
+    height: 20px;
+}
+
+.map-box {
+    width: 100%;
+    height: 350px;
+}
+
+.contact-box-container {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+    align-content: center;
+    position: absolute;
+    z-index: 3;
+    right: 60px;
+    bottom: 270px;
+}
+
+.contact-box {
+    width: 330px;
+    height: 220px;
+    background-color: #E8E3E3;;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+    align-content: center;
+    color: rgba(255, 255, 255, 0.74);
+}
+
+
+
+.iframe {
+    border: none;
+    z-index: 1;
+    position: absolute;
+}
+
+.message-box-container {
+    padding-top: 410px;
+    width: 100%;
+    height: 350px;
+}
+
+.message-box {
+    margin: 30px 0px 30px 300px;
+}
+
+.messageInput {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: center;
+}
+
+.messageInput-container {
+    margin-top: 20px;
+    background-color: #E8E3E3;
+    width: 400px;
+    height: 200px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: center;
+}
+
+.messageInput-container2 {
+    margin-top: 20px;
+    width: 400px;
+    height: 200px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+    align-content: center;
+}
+
+.messageInput-container2-box1 {
+    background-color: #E8E3E3;
+    width: 95%;
+    height: 30%;
+    margin: 0 0 0 5px;
+}
+
+.messageInput-container2-box2{
+    background-color: #E8E3E3;
+    width: 95%;
+    height: 30%;
+    margin: 5px 0 0 5px;
+}
+
+.messageInput-container2-box3 {
+    width: 95%;
+    height: 40%;
+    margin: 5px 0 0 5px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
