@@ -10,15 +10,16 @@ body {
 .banner {
   padding-top: 160px; 
   margin: 0 40px 0 40px;
-  background: linear-gradient(to right, #FFFFFF, white, rgba(255, 255, 255, 0.47), transparent, transparent), url('https://i.imgur.com/lNSqNbP.jpg') no-repeat center; 
+  background: linear-gradient(to right, #FFFFFF, white, rgba(255, 255, 255, 0.47), transparent, transparent), url('https://i.imgur.com/IrhFA2W.jpg') no-repeat center; 
   background-size: cover;
 
 }
 .banner:hover {
-  background: linear-gradient(to right, #FFFFFF, white, rgba(255, 255, 255, 0.47), transparent, transparent), url('https://i.imgur.com/EsSAXN1.jpg') no-repeat center; 
+  background: linear-gradient(to right, #FFFFFF, white, rgba(255, 255, 255, 0.47), transparent, transparent), url('https://i.imgur.com/Aa3bTI8.jpg') no-repeat center; 
   background-size: cover; 
   padding-top: 160px; 
   margin: 0 40px 0 40px;
+   transition: 2s ease;
 }
 
 .banner-img {
