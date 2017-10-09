@@ -1,4 +1,4 @@
 INSERT INTO lineitems
-(product_id)
+(product_id, order_id)
 VALUES 
-($1);
+($1, $2);

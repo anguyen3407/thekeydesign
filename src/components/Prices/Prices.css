@@ -67,7 +67,7 @@
 
 .add-ons {
     width: 50%;
-    height: 170px;
+    height: auto;
     margin: 180px 30px 0px 30px;
     display: flex;
 	flex-direction: column;
@@ -109,4 +109,3 @@ margin-left: 200px;
    width: 200%; 
    height: 25px;
 }
-

@@ -27,7 +27,7 @@ class Contacts extends Component {
       </iframe>
       <div className='contact-box-container'>
 <div className='contact-box'>
-  <img src='http://www.aberke.com/static/img/mail-black-white.png' width='30px' height='30px'/>info@thekeydesign.com
+  <img src='http://www.aberke.com/static/img/mail-black-white.png' width='30px' height='30px' alt=''/>info@thekeydesign.com
   </div>
   </div>
   </div> 

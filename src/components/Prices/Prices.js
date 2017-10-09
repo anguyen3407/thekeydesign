@@ -91,13 +91,15 @@ class Prices extends Component {
 </div>
 <div className='second-container'>
   <div className='add-ons'>
-  + standard photography | $150
+ + standard photography | $150 
+ <input type='checkbox' value='true' name='checkbox'></input> 
   <br></br>
   + twilight photography | $350
   <br></br>
   + drone photography | $250
   <br></br>
   + house cleaning | $40/hr
+  
   </div>
 <div className='full-container'>
   </div>

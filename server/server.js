@@ -55,13 +55,20 @@ return res.sendStatus(200);
 });
 });
 
-app.get('/api/product/basic', ctrl.getProductBasic);
-app.get('/api/product/drone', ctrl.getProductDrone);
-app.get('/api/product/houseCleaning', ctrl.getProductHouseCleaning);
-app.get('/api/product/standard', ctrl.getProductStandard);
-app.get('/api/product/twilight', ctrl.getProductTwilight);
+//title
+// app.get('/api/product/basic', ctrl.getProductBasic);
+// app.get('/api/product/drone', ctrl.getProductDrone);
+// app.get('/api/product/houseCleaning', ctrl.getProductHouseCleaning);
+// app.get('/api/product/standard', ctrl.getProductStandard);
+// app.get('/api/product/twilight', ctrl.getProductTwilight);
 
 
+// //cart
+// app.post('/api/product/cart', ctrl.addProducts);
+
+
+//NEWCART
+app.post('/api/product/scheduleOrder', ctrl.scheduleOrder);
 
 app.listen(3535, () => {
 console.log('Listening to port: ', 3535)});

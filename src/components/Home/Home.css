@@ -10,9 +10,15 @@ body {
 .banner {
   padding-top: 160px; 
   margin: 0 40px 0 40px;
-  background: linear-gradient(to right, #FFFFFF, white, rgba(255, 255, 255, 0.47), transparent, transparent), url('https://i.imgur.com/tyxX2Y1.jpg') no-repeat center; 
-  background-size: cover; 
+  background: linear-gradient(to right, #FFFFFF, white, rgba(255, 255, 255, 0.47), transparent, transparent), url('https://i.imgur.com/lNSqNbP.jpg') no-repeat center; 
+  background-size: cover;
 
+}
+.banner:hover {
+  background: linear-gradient(to right, #FFFFFF, white, rgba(255, 255, 255, 0.47), transparent, transparent), url('https://i.imgur.com/EsSAXN1.jpg') no-repeat center; 
+  background-size: cover; 
+  padding-top: 160px; 
+  margin: 0 40px 0 40px;
 }
 
 .banner-img {
@@ -79,4 +85,44 @@ a {
 .scroll-contain {
   width: 100%;
   text-align: center;
+}
+
+
+
+
+
+
+.firstpic {
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 250px;
+  width: 400px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #434141;
+}
+
+.Pic:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-decoration: none;
+  letter-spacing: 4px;
+  font-weight: lighter;
 }
