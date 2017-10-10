@@ -68,15 +68,15 @@ body {
   justify-content: stretch;
   align-items: stretch;
   opacity: 0;
+  border: 15px solid white;
 }
 
 .wrapper > div {
-  background: #eee;
-
+  background-color: white;
 }
 
 .wrapper > div:nth-child(odd) {
-  background: #ddd;
+  background-color: white;
 }
 
 .box1 {
@@ -174,7 +174,7 @@ grid-row: 1/3;
   grid-row: 15/17;
 } 
 
-.box1:hover
+/* .box1:hover
 {
         -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
@@ -186,7 +186,7 @@ grid-row: 1/3;
         -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
         transform: scale(1.3);
-}
+} */
 
 .box3:hover
 {
@@ -216,14 +216,14 @@ grid-row: 1/3;
         transform: scale(1.3);
 }
 
-.box7:hover
+/* .box7:hover
 {
         -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
         transform: scale(1.3);
-}
+} */
 
-.box8:hover
+/* .box8:hover
 {
         -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
@@ -249,14 +249,14 @@ grid-row: 1/3;
         -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
         transform: scale(1.3);
-}
+} */
 
-.box12:hover
+/* .box12:hover
 {
         -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
         transform: scale(1.3);
-}
+} */
 
 .box13:hover
 {
@@ -279,12 +279,12 @@ grid-row: 1/3;
         transform: scale(1.3);
 }
 
-.box16:hover
+/* .box16:hover
 {
         -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
         transform: scale(1.3);
-}
+} */
 
 .box17:hover
 {
@@ -448,12 +448,12 @@ grid-row: 1/3;
 }
 
 .wrapper > div {
-  background: #eee;
+  background: white
 
 }
 
 .wrapper > div:nth-child(odd) {
-  background: #ddd;
+  background: white
 }
 
 .box1 {
@@ -551,7 +551,16 @@ grid-row: 1/3;
   grid-row: 15/17;
 } 
 
-.box1:hover
+
+
+
+@media (min-width: 1000px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    opacity: 1; 
+  }
+
+  /* .box1:hover
 {
         -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
@@ -563,7 +572,7 @@ grid-row: 1/3;
         -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
         transform: scale(1.3);
-}
+} */
 
 .box3:hover
 {
@@ -593,14 +602,14 @@ grid-row: 1/3;
         transform: scale(1.3);
 }
 
-.box7:hover
+/* .box7:hover
 {
         -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
         transform: scale(1.3);
-}
+} */
 
-.box8:hover
+/* .box8:hover
 {
         -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
@@ -614,8 +623,8 @@ grid-row: 1/3;
         transform: scale(1.3);
 }
 
-.box10:hover
-{
+.box10:hover */
+/* {
         -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
         transform: scale(1.3);
@@ -633,7 +642,7 @@ grid-row: 1/3;
         -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
         transform: scale(1.3);
-}
+} */
 
 .box13:hover
 {
@@ -656,12 +665,12 @@ grid-row: 1/3;
         transform: scale(1.3);
 }
 
-.box16:hover
+/* .box16:hover
 {
         -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
         transform: scale(1.3);
-}
+} */
 
 .box17:hover
 {
@@ -683,13 +692,6 @@ grid-row: 1/3;
         -ms-transform: scale(1.3);
         transform: scale(1.3);
 }
-
-
-@media (min-width: 1000px) {
-  .wrapper {
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    opacity: 1; 
-  }
 }
 
 
@@ -711,7 +713,7 @@ grid-row: 1/3;
     
     .box2 {
     grid-column: 1; 
-    grid-row: 3/8;
+    grid-row: 3/9;
     }
     
     .box3 {

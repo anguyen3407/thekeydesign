@@ -17,26 +17,28 @@ class Anderson extends Component {
       return (
   
   <div className= 'anderson'>
-          <img className = 'pic-box' src='https://i.imgur.com/KQxLmXK.jpg' width='50%' height='50%' alt='anderson'/>
-          <img className = 'pic-box' src='https://i.imgur.com/AXeohRg.jpg' width='50%' height='50%' alt='anderson'/>
-          <img className = 'pic-box' src='https://i.imgur.com/4CEKKDp.jpg' width='50%' height='50%' alt='anderson'/>
-          <img className = 'pic-box' src='https://i.imgur.com/X37g6PL.jpg' width='50%' height='50%' alt='anderson'/>
-          <img className = 'pic-box' src='https://i.imgur.com/en8a76o.jpg' width='50%' height='50%' alt='anderson'/>
-          <img className = 'pic-box' src='https://i.imgur.com/2oOdxBy.jpg' width='50%' height='50%' alt='anderson'/>
-          <img className = 'pic-box' src='https://i.imgur.com/EsSAXN1.jpg' width='50%' height='50%' alt='anderson'/>
-          <img className = 'pic-box' src='https://i.imgur.com/LQtDMeQ.jpg' width='50%' height='50%' alt='anderson'/>
-          <img className = 'pic-box' src='https://i.imgur.com/KEjw5T2.jpg' width='50%' height='50%' alt='anderson'/>
-          <img className = 'pic-box' src='https://i.imgur.com/s1Y6r9U.jpg' width='50%' height='50%' alt='anderson'/>
-          <img className = 'pic-box' src='https://i.imgur.com/lTEh8G0.jpg' width='50%' height='50%' alt='anderson'/>
-          <img className = 'pic-box' src='https://i.imgur.com/uRkRkxi.jpg' width='50%' height='50%' alt='anderson'/>
-          <img className = 'pic-box' src='https://i.imgur.com/joi5fcE.jpg' width='50%' height='50%' alt='anderson'/>
-          <img className = 'pic-box' src='https://i.imgur.com/XXcKbbS.jpg' width='50%' height='50%' alt='anderson'/>
-          <img className = 'pic-box' src='https://i.imgur.com/SoYtfjW.jpg' width='50%' height='50%' alt='anderson'/>
-          <img className = 'pic-box' src='https://i.imgur.com/bR8lIOp.jpg' width='50%' height='50%' alt='anderson'/>
-          <img className = 'pic-box' src='https://i.imgur.com/uzrw9Qu.jpg' width='50%' height='50%' alt='anderson'/>
-          <img className = 'pic-box' src='https://i.imgur.com/eivHkjt.jpg' width='50%' height='50%' alt='anderson'/>
-          <img className = 'pic-box' src='https://i.imgur.com/hJ7s3Ym.jpg' width='50%' height='50%' alt='anderson'/>
-          <img className = 'pic-box' src='https://i.imgur.com/9jxQMF9.jpg' width='50%' height='50%' alt='anderson'/>
+      <div className= 'wrapper'>
+          <div className='box box1'>  <img src="https://i.imgur.com/N6NBUdc.jpg" width='100%' height='100%' alt="Cute cat"/></div>
+          <div className='box box2'> <img src="https://i.imgur.com/UbrRb9B.jpg" width='100%' height='100%' alt="Cute cat"/> </div>
+          <div className='box box3'> <img src="https://i.imgur.com/HYPZFZO.jpg" width='100%' height='100%' alt="Cute cat"/> </div>
+          <div className='box box4'> <img src="https://i.imgur.com/HYPZFZO.jpg" width='100%' height='100%' alt="Cute cat"/></div>
+          <div className='box box5'>  <img src="https://i.imgur.com/HYPZFZO.jpg" width='100%' height='100%' alt="Cute cat"/> </div>
+          <div className='box box6'> Box 6 </div>
+          <div className='box box7'> Box 7 </div>
+          <div className='box box8'> Box 8 </div>
+          <div className='box box9'> Box 9 </div>
+          <div className='box box10'> Box 10 </div>
+          <div className='box box11'> Box 11 </div>
+          <div className='box box12'> Box 12 </div>
+          <div className='box box13'> Box 13 </div>
+          <div className='box box14'> Box 14 </div>
+          <div className='box box15'> Box 15 </div>
+          <div className='box box16'> Box 16 </div>
+          <div className='box box17'> Box 17 </div>
+          <div className='box box18'> Box 18 </div>
+          <div className='box box19'> Box 19 </div>
+
+      </div>
   </div>
     );
     }

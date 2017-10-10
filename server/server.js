@@ -1,14 +1,15 @@
+require ('dotenv').config();
+
 const express = require('express')
 , bodyParser = require('body-parser')
 , cors = require('cors')
-// , config =  require('./config')
-// , stripe = require('stripe')('sk_test_nJIKYXKLVHBFK8QmfdDak42R')
+, stripe = require('stripe')('sk_test_nJIKYXKLVHBFK8QmfdDak42R')
 , app =  module.exports = express()
 , session = require('express-session')
 , massive = require('massive')
 , ctrl = require('../src/controller/productController');
 
-require ('dotenv').config();
+
 
 massive(process.env.CONNECTION_STRING).then(db => {
   app.set('db', db)
@@ -19,6 +20,7 @@ app.use(cors())
 
 
 app.post('/api/payment', function(req, res, next){
+  console.log('yup this is it', req.body)
 //convert amount to pennies
 const amountArray = req.body.amount.toString().split('');
 const pennies = [];
@@ -48,7 +50,16 @@ source: req.body.token.id,
 description: 'Test charge from react app'
 }, function(err, charge) {
 if (err) return res.sendStatus(500)
-return res.sendStatus(200);
+
+const dbInstance = req.app.get('db');
+const {standard, twilight, drone, house, total, city, state, zip, street_address}= req.body.options;
+console.log(standard, twilight, drone, house, total, city, state, zip, street_address);
+dbInstance.add_order([true, standard, twilight, drone, house, city, state, zip, street_address])
+.then(() => res.status(200).send())
+
+
+
+// return res.sendStatus(200);
 // if (err && err.type === 'StripeCardError') {
 //   // The card has been declined
 // }
