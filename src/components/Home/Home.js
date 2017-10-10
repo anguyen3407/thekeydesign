@@ -23,8 +23,19 @@ class Home extends Component {
 </div>
 <h2 className = 'logo-name'>HOME STAGING</h2>
 </div>
-
-  <div className="Choose">CHOOSE CATEGORY <img src='https://d30y9cdsu7xlg0.cloudfront.net/png/10897-200.png' width='10px' height='10' alt=''/></div>
+<div class="dropdown">
+  <div className="dropdown">CHOOSE CATEGORY <img src='https://d30y9cdsu7xlg0.cloudfront.net/png/10897-200.png' width='10px' height='10' alt=''/>
+  <div className="dropdown-content">
+  <Link to='/kitchen' className='Kitchen'>Kitchen</Link>
+  <br></br>
+  <Link to='/bedroom' className='Bedroom'>Bedroom </Link>
+  <br></br>
+  <Link to='/bathroom' className='Bathroom'>Bathroom</Link>
+  <br></br>
+  <Link to='/living-family-room' className='livingRoom'>Living/Family Room</Link>
+  </div>
+  </div>
+  </div>
 
     <div className="Pictures">
         <div className="Pic">
@@ -110,8 +121,25 @@ class Home extends Component {
 
 
 
+  <div className='Testimonials-container'>
+    <div className='Testimonials'> - PEOPLE LOVE US - 
+      <div className='testmonial-box'>
+      <div className='testimonial-text'> 
+        <img src='https://d30y9cdsu7xlg0.cloudfront.net/png/19279-200.png' width='40px' height='40px' className='quote-left'/> 
+       <h3> hi hello whatsup this is my awesome testimonial. this place is cool. code code code.</h3>
+        <img src='https://d30y9cdsu7xlg0.cloudfront.net/png/19278-200.png' width='40px' height='40px' className='quote-right'/> 
+        </div>
+      <div className='test-image-container'>
+       <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Biochem_reaction_arrow_reverse_NNNN_horiz_med.svg/2000px-Biochem_reaction_arrow_reverse_NNNN_horiz_med.svg.png'width='50px' height='50px' className='arrow-left'/> 
+        &nbsp; &nbsp; <div className='testimonial-photo'> <img src='https://cdn1.iconfinder.com/data/icons/freeline/32/account_friend_human_man_member_person_profile_user_users-512.png'width='100%' height='100%'/> </div>  &nbsp; &nbsp;    
+        <img src='https://userscontent2.emaze.com/images/6e6e87f6-3d18-4d26-af06-c3b9256010d5/30571f71653716854bd1385fa485ae4a.png'width='50px' height='50px' className='arrow-right'/>
+      </div>
+      </div>
+    </div>
+    </div>
 
-<div className='scroll-contain'>
+
+    <div className='scroll-contain'>
   <a href="top" className='scroll'>scroll to top</a>
   </div>
   </div>

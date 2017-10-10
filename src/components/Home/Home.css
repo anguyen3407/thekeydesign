@@ -4,27 +4,29 @@ body {
 
 
 .first-box {
-  padding: 80px 0px 40px 0px;
+  padding: 65px 0px 40px 0px;
 }
 
-.banner {
+/* .banner {
   padding-top: 160px; 
   margin: 0 40px 0 40px;
   background: linear-gradient(to right, #FFFFFF, white, rgba(255, 255, 255, 0.47), transparent, transparent), url('https://i.imgur.com/IrhFA2W.jpg') no-repeat center; 
   background-size: cover;
 
-}
-.banner:hover {
+} */
+
+
+.banner {
   background: linear-gradient(to right, #FFFFFF, white, rgba(255, 255, 255, 0.47), transparent, transparent), url('https://i.imgur.com/Aa3bTI8.jpg') no-repeat center; 
   background-size: cover; 
-  padding-top: 160px; 
-  margin: 0 40px 0 40px;
-   transition: 2s ease;
+  padding-top: 290px; 
+  transition: 2s ease;
 }
 
 .banner-img {
   padding: 50px 130px 0px 210px;
 }
+
 
 .logo-name {
   font-size: 13px;
@@ -34,14 +36,6 @@ body {
   padding-bottom: 90px;
   color: #5D5A5A;
   font-weight: lighter;
-}
-
-.Choose {
-  text-align: center;
-  font-size: 8px;
-  letter-spacing: 6px;
-  font-weight: bold;
-  padding-top: 20px;
 }
 
 
@@ -127,3 +121,165 @@ a {
   letter-spacing: 4px;
   font-weight: lighter;
 }
+
+
+.Testimonials-container {
+  width: 80%;
+  height: 400px;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+  align-content: center;
+  padding-bottom: 60px;
+}
+
+.Testimonials {
+  width: 100%;
+  height: auto;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.testmonial-box {
+  width: 100%;
+  height: 200px;
+  background: rgba(228, 243, 244, 0.77);
+  margin-top: 30px;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.testimonial-photo {
+  width: 130px;
+  height: 65%;
+  background: rgba(197, 193, 193, 0.40);
+  margin-top: 90px;
+  background-size: cover;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+ .arrow-left {
+  margin-top: 140px;
+}
+
+.arrow-right {
+  margin-top: 140px;
+} 
+
+.test-image-container {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.testimonial-text {
+width: 80%;
+height: 800px;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+
+.quote-left{
+margin-bottom: 80px;
+margin-right: 25px;
+}
+
+.quote-right{
+  margin-top: 80px;
+  }
+
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 8px;
+    letter-spacing: 6px;
+    font-weight: bold;
+    padding-top: 20px;
+    width: 100%;
+    margin-bottom:10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    line-height: 20px;
+  }
+
+
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 7px 0px 0px rgba(142, 140, 140, 0.20);
+      padding: 12px 16px;
+      z-index: 1;
+      text-align: center;
+      font-size: 8px;
+      letter-spacing: 6px;
+      font-weight: bold;
+      width: 30%;
+      line-height: 30px;
+      margin-top: 17px;
+
+  }
+
+  .dropdown:hover .dropdown-content {
+      display: block;
+      animation: fadein 0.5s;
+      -webkit-animation: fadein 0.5s;
+  }
+
+  @-webkit-keyframes fadein { 
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+  .Bathroom:hover {
+    color: rgba(152, 148, 148, 0.57);
+  
+  }
+
+  .Bedroom:hover {
+    color: rgba(152, 148, 148, 0.57);
+  
+  }
+
+  .livingRoom:hover {
+    color: rgba(152, 148, 148, 0.57);
+  
+  }
+
+  .Kitchen:hover {
+    color: rgba(152, 148, 148, 0.57);
+  
+  }

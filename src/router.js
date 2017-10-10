@@ -17,7 +17,10 @@ import Miller from './components/Images/miller';
 import Nicholaus from './components/Images/nicholaus';
 import Sacs from './components/Images/sacs';
 import Westgate from './components/Images/westgate';
-
+import Kitchen from './components/Choose Category/kitchen';
+import Bedroom from './components/Choose Category/Bedroom';
+import Bathroom from './components/Choose Category/bathroom';
+import LivingRoom from './components/Choose Category/livingRoom';
 
 
 export default (
@@ -38,5 +41,9 @@ export default (
     <Route path="/nicholaus" component={ Nicholaus } />
     <Route path="/sacs" component={ Sacs } />
     <Route path="/westgate" component={ Westgate } />
+    <Route path="/kitchen" component={Kitchen}/>
+    <Route path="/bedroom" component={Bedroom}/>
+    <Route path="/bathroom" component={Bathroom}/>
+    <Route path="/living-family-room" component={LivingRoom}/>
   </Switch>
 )
