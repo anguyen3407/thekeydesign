@@ -126,12 +126,15 @@ class Home extends Component {
       <div className='testmonial-box'>
       <div className='testimonial-text'> 
         <img src='https://d30y9cdsu7xlg0.cloudfront.net/png/19279-200.png' width='40px' height='40px' className='quote-left'/> 
-       <h3> hi hello whatsup this is my awesome testimonial. this place is cool. code code code.</h3>
+       <h4>  I’ve been a Realtor for many years. The Key Design has been staging most of my listings since the opened their business. 
+         The Key Design designers have an eye for beauty and can make a drab property spring to life with their staging.  Our chances of selling are dramatically increased due to their amazing service and talent. </h4>
         <img src='https://d30y9cdsu7xlg0.cloudfront.net/png/19278-200.png' width='40px' height='40px' className='quote-right'/> 
         </div>
+        <div className='testimonial-name'> - Monica McQueen | The McQueen Team</div>
+        <br></br>
       <div className='test-image-container'>
        <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Biochem_reaction_arrow_reverse_NNNN_horiz_med.svg/2000px-Biochem_reaction_arrow_reverse_NNNN_horiz_med.svg.png'width='50px' height='50px' className='arrow-left'/> 
-        &nbsp; &nbsp; <div className='testimonial-photo'> <img src='https://cdn1.iconfinder.com/data/icons/freeline/32/account_friend_human_man_member_person_profile_user_users-512.png'width='100%' height='100%'/> </div>  &nbsp; &nbsp;    
+        &nbsp; &nbsp; <div className='testimonial-photo'> <img src='https://i.imgur.com/pSYf8Hu.png'width='100%' height='100%'/> </div>  &nbsp; &nbsp;    
         <img src='https://userscontent2.emaze.com/images/6e6e87f6-3d18-4d26-af06-c3b9256010d5/30571f71653716854bd1385fa485ae4a.png'width='50px' height='50px' className='arrow-right'/>
       </div>
       </div>

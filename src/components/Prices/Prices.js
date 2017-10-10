@@ -20,6 +20,9 @@ class Prices extends Component {
 
   render() {
 
+  
+
+
     return (
 <div className= 'Prices'>
 <div className= 'wrap'>
@@ -57,7 +60,12 @@ class Prices extends Component {
 <div className='box-Three-container'>
  
 <br></br>
-  <input type='checkbox' value='true' name='checkbox'></input> 
+{/* <input
+                            type="checkbox"
+                            value={label}
+                            checked={isChecked}
+                            onChange={this.toggleCheckbox}
+                        /> */}
   &nbsp;standard photography | &nbsp;<b>$150</b> &nbsp; &nbsp; &nbsp;
   
   
@@ -77,7 +85,9 @@ class Prices extends Component {
 <div className='box-Four-container'>
   <div className='includes'>
   <h1>Full Interior Design Package</h1>
-  -INCLUDES
+  INCLUDES-
+  <br></br>
+  Our professional design team can help with interior design needs for Businesses, Residential, New Builds, Parade of Homes, etc.
   <br></br>
   &nbsp; &nbsp; &nbsp; &nbsp;- Interior Design Consultation | &nbsp;<b>$75/hr</b>
   <br></br>
