@@ -19,9 +19,9 @@ class App extends Component {
 <div className = "app">
 
   <div className = "first-box">
-  <Nav/>
-  {router}
-</div>
+    <Nav/>
+    {router}
+  </div>
 
 </div>
 

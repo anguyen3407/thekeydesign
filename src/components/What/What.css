@@ -103,7 +103,7 @@
 	flex-wrap: wrap-reverse;
 	justify-content: space-around;
 	align-items: center;
-	align-content: center;
+    align-content: center;
 }
 
 .what-text {
@@ -139,6 +139,11 @@
 
 
 
+  
+
+
+
+
 /* BANNER */
 
 .b-container {
@@ -147,7 +152,7 @@
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: baseline;
-	align-content: center;
+    align-content: center;
 }
 
 .b {

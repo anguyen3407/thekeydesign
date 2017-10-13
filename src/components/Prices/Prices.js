@@ -146,6 +146,7 @@ this.onToken=this.onToken.bind(this);
       <br></br>
       <input type="checkbox" onChange={()=> {this.toggleCheckboxHouse()}}/>
       &nbsp;house cleaning | &nbsp;<b>$40/hr</b>
+      {this.state.total}
   </div>
   </div>
   <div className='box boxFour'> 

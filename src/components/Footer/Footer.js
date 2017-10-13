@@ -34,7 +34,7 @@ class Footer extends Component {
 <Link to='/prices' className='nav-prices'>PRICES / SERVICES</Link>
 <Link to='/' className='nav-home'>TESTIMONIALS</Link>
 <div className = 'insta-img'>
-<a href="https://instagram.com/thekeydesignstaging" target="_blank"><i class="fa fa-instagram fa-5x"> <img src = "http://logomecca.com/wp-content/uploads/2015/07/instagram_logo_transparent_background_vector.png" width='20px' height="20px" alt='instagram'/> </i></a>
+<a href="https://instagram.com/thekeydesignstaging" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram fa-5x"> <img src = "http://logomecca.com/wp-content/uploads/2015/07/instagram_logo_transparent_background_vector.png" width='20px' height="20px" alt='instagram'/> </i></a>
 </div>
 </div>
     </div>
