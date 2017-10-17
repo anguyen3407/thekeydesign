@@ -63,7 +63,7 @@
     outline-style: none;
 }
 
-.messageInput {
+/* .messageInput {
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -124,4 +124,107 @@
 	align-items: center;
 	align-content: center;
 }
+ */
 
+
+
+ .ContactsImgContainer {
+     width: 100%;
+     height: 735px;
+     background-image: url('https://i.imgur.com/dxYd4j6.jpg');
+     background-size: 100% 100%;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     justify-content: flex-start;
+     align-items: flex-start;
+     align-content: flex-start;
+ }
+
+ .contacts-words {
+     margin: 60px 0 0 80px;
+     width: 50%;
+     height: 20%;
+     /* border: 1px solid red; */
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: center;
+     align-items: flex-end;
+     align-content: flex-end;
+     color: #301F1C;
+     letter-spacing: 3px;
+     font-size: 46px;
+     text-shadow: -1px 0 rgba(255, 255, 255, 0.55);
+ }
+
+ .giant-box {
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+     align-items: flex-start;
+     align-content: flex-start;
+ }
+
+ .contacts_box_container {
+    width: 30%;
+    height: 80%;
+    margin: 10px 0 40px 300px;
+    background-color: rgba(238, 235, 235, 0.91);
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline-style: none;
+    color: #6E6D6D;
+    padding: 40px;
+ }
+
+ .contacts_box_container2 {
+    width: 20%;
+    height: 230px;
+    margin: 10px 0 0px 30px;
+    background-color: rgba(238, 235, 235, 0.91);
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline-style: none;
+    color: #6E6D6D;
+    padding: 40px;
+    border: 1px solid #838181;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: flex-start;
+ }
+
+ .contacts_box_container2 input{
+     width: 100%;
+     border-top: none;
+     border-left: none;
+     border-right: none;
+     border-bottom: 1px solid #838181;
+     background-color: rgba(255, 255, 255, 0);
+     outline-style: none;
+     font-size: 18px;
+     padding-bottom: 0;
+ }
+
+ .send-btn {
+     width: 100px;
+     height: 30px;
+     margin-left: 180px;
+     background-color: #D4D1D1;
+     outline-style: none;
+     border: 0.5px solid #838181;
+     letter-spacing: 2px;
+ }
+
+ .send-btn:hover {
+ background-color: rgba(59, 58, 58, 0.36);
+ color: white;
+ font-weight: lighter;
+ letter-spacing: 3px;
+ }

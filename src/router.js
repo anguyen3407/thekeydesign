@@ -21,6 +21,7 @@ import Kitchen from './components/Choose Category/kitchen';
 import Bedroom from './components/Choose Category/Bedroom';
 import Bathroom from './components/Choose Category/bathroom';
 import LivingRoom from './components/Choose Category/livingRoom';
+import Admin from '././components/admin';
 
 
 export default (
@@ -45,5 +46,6 @@ export default (
     <Route path="/bedroom" component={Bedroom}/>
     <Route path="/bathroom" component={Bathroom}/>
     <Route path="/living-family-room" component={LivingRoom}/>
+    <Route path='/admin' component={Admin}/>
   </Switch>
 )

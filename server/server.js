@@ -8,7 +8,9 @@ const express = require('express'),
   session = require('express-session'),
   massive = require('massive'),
   ctrl = require('../src/controller/productController'),
-  nodemailer = require('nodemailer');
+  nodemailer = require('nodemailer'), 
+  passport = require('passport'), 
+  Auth0Strategy = require('passport-auth0');
 
 
 
@@ -20,6 +22,69 @@ massive(process.env.CONNECTION_STRING).then(db => {
 app.use(bodyParser.json());
 app.use(cors())
 
+
+//auth0
+
+app.use(session({
+  secret: process.env.SECRET,
+  resave: false,
+  saveUninitialized: true
+}))
+app.use(cors());
+app.use(bodyParser.json())
+app.use(passport.initialize());
+app.use(passport.session());
+
+massive(process.env.CONNECTION_STRING)
+.then( db => {
+  app.set('db', db)
+})
+
+passport.use( new Auth0Strategy({
+  domain: process.env.AUTH_DOMAIN,
+  clientID: process.env.AUTH_CLIENT_ID,
+  clientSecret: process.env.AUTH_CLIENT_SECRET,
+  callbackURL: process.env.AUTH_CALLBACK
+}, function(accessToken, refreshToken, extraParams, profile, done) {
+  const db = app.get('db');
+      db.get_user([profile.identities[0].user_id]).then( user => {
+          if (user[0]) {
+              done(null, user[0].id)
+          } else {
+              db.create_user([
+                  profile.emails[0].value,
+                  profile.identities[0].user_id]).then( user => {
+                      done(null, user[0].id)
+                  })
+          }})
+    }))
+
+   passport.serializeUser(function(userId, done) {
+      done(null, userId);
+  })
+    passport.deserializeUser( function( userId, done) {
+      app.get('db').current_user(userId).then(user => {
+              done(null, user[0])
+  })
+  })
+  app.get('/auth', passport.authenticate('auth0'));
+  app.get('/auth/callback', passport.authenticate('auth0',{
+      successRedirect: 'http://localhost:3002/#/admin',
+      failureRedirect: '/auth'
+  }))
+
+  app.get('/auth/logout', (req,res) => {
+      req.logOut();
+      res.redirect(302, 'https://annienguyen.auth0.com/v2/logout?returnTo=http%3A%2F%2Flocalhost%3A3002&client_id=Fn1FdZ9y6co8yB4qwMGHyz3wLPmFsLoj')
+  })
+
+  app.get('/api/user',  passport.authenticate('auth0'), (req, res) => {
+      req.app.get('db').current_user().then(user =>{
+          res.status(200).send(user)
+      }).catch((err) => {console.log(err)})
+  })
+
+//auth0 end
 
 
 app.post('/api/sendEmail', (req, res) => {
@@ -35,53 +100,21 @@ app.post('/api/sendEmail', (req, res) => {
     from: req.body.email,
     to: 'a.nguyen8778@yahoo.com',
     subject: req.body.email,
-    text: "you have a submission with the following details ... From: " +req.body.user_email+ "To:" +req.body.email+ "Message:" +req.body.message
+    text: "you have a submission with the following details ... From: " +req.body.user_email+ "To:" +req.body.email+ "Message:" +req.body.message,
+    html: '<ul><li>From: '+req.body.user_email+'</li><li>To: '+req.body.email+'</li><li>Message: <p>'+req.body.message+'</p></li></ul>'
   };
   console.log(mailOptions)
   transporter.sendMail(mailOptions, function (error, response) {
     if (error) {
       console.log(error);
     } else {
-      console.log('IT WORKS')
+      console.log('message sent!')
     }
   });
 })
 
 app.post('/api/payment', function (req, res, next) {
   console.log('yup this is it', req.body)
-
-
-
-
-  // app.post('/api/sendemail', (req,res)=> {
-  //   let {name, email, message}= req.body;
-  //   console.log('hi')
-  // }).then(() => {
-  //   var transporter = nodemailer.createTransport({
-  //       service: 'yahoo',
-  //       auth: {
-  //       user: 'a.nguyen8778@yahoo.com',
-  //       pass: process.env.EMAIL_PASSWORD 
-  //     }
-  //   });
-  //   // if (!req.file) {
-    // var mailOptions = {
-    //   from: req.body.email,
-    //   to: 'a.nguyen8778@yahoo.com',
-    //   subject: req.body.name,
-    //   text: req.body.message
-    // };
-
-    // transporter.sendEmail(mailOptions, function (error, response) {
-    //   if (error) {
-    //     console.log(error);
-    //   } else {
-    //     console.log('IT WORKS')
-    //   }
-    // });
-  // })
-
-
 
 
   //convert amount to pennies
@@ -110,7 +143,7 @@ app.post('/api/payment', function (req, res, next) {
     amount: convertedAmt, // amount in cents, again
     currency: 'usd',
     source: req.body.token.id,
-    description: 'Test charge from react app'
+    description: 'Test Charge'
   }, function (err, charge) {
     if (err) return res.sendStatus(500)
 
@@ -137,7 +170,21 @@ app.post('/api/payment', function (req, res, next) {
     //   // The card has been declined
     // }
   });
-});
+}
+
+);
+
+// admin page
+
+app.get('/api/admin', (req, res) => {
+  const invoice = app.get('db')
+  req.app.get('db').get_invoice([req.body.options]).then(invoices=> {
+    console.log(invoices)
+    res.status(200).send(invoices);
+  }).catch((err) => (console.log(err)))
+})
+
+// admin page close
 
 //title
 // app.get('/api/product/basic', ctrl.getProductBasic);

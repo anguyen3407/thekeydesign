@@ -39,7 +39,7 @@ class Contacts extends Component {
       'message': this.state.message
     }).catch((err) => {
       console.log(err);
-      alert('Email Sent', err);
+      alert('error', err);
     })
   }
 
@@ -50,7 +50,39 @@ class Contacts extends Component {
     return (
 
       <div className='Contacts'>
-        <div className="emptyspace"></div>
+        <div className='ContactsImgContainer'> 
+            <h1 className='contacts-words'>CONTACT US</h1>
+            <div className='contactsBox'>
+              </div>
+              <div className='giant-box'>
+              <textarea
+              rows="14" cols="10" wrap="hard"
+                placeholder='Your message here'
+                type='text'
+                className='contacts_box_container'
+                value={this.state.message}
+                onChange={(e) => { this.toggleMessage(e.target.value) }} />
+                <div className='contacts_box_container2'>
+                <input
+                  type='text'
+                  className='messagetextarea-container2-box2'
+                  value={this.state.email}
+                  onChange={(e) => { this.toggleEmail(e.target.value) }} />
+                <input
+                  placeholder='Your Email'
+                  type='text'
+                  className='messageInput-container2-box1'
+                  value={this.state.user_email}
+                  onChange={(e) => { this.toggleName(e.target.value) }} />
+                <div className='messageInput-container2-box3'>
+                  <button className='send-btn' onClick={()=>{
+                    this.sendEmail()
+                  }} >SEND</button>
+                </div>
+                </div>
+                </div>
+        </div>
+        {/* <div className="emptyspace"></div>
         <div className='map-box'>
           <iframe className='iframe'
             width="100%"
@@ -94,7 +126,7 @@ class Contacts extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <Footer />
       </div>
 

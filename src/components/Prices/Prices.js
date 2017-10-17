@@ -27,7 +27,7 @@ this.onToken=this.onToken.bind(this);
       token.card = void 0;
       console.log('token', this.state);
       axios.post('/api/payment', { token, amount: 67500, options: this.state} ).then(response => {
-        alert('we are in business')
+        alert('Thank you for your purchase!')
       });
     }
 
@@ -118,6 +118,9 @@ this.onToken=this.onToken.bind(this);
 
       Address <input onChange={(e)=> {this.toggleAddress(e)}}/>
 
+      <br></br>
+      Total:    ${this.state.total}.00
+
     </div>
     <div classname='receipt-checkout'>
       <div className='checkout-btn'>
@@ -146,7 +149,8 @@ this.onToken=this.onToken.bind(this);
       <br></br>
       <input type="checkbox" onChange={()=> {this.toggleCheckboxHouse()}}/>
       &nbsp;house cleaning | &nbsp;<b>$40/hr</b>
-      {this.state.total}
+   
+    
   </div>
   </div>
   <div className='box boxFour'> 
@@ -161,6 +165,16 @@ this.onToken=this.onToken.bind(this);
           <br></br>
           <Link to='/contacts' className='nav-contacts'> - <b>CONTACT US</b></Link> for pricing
       </div>
+      </div>
+  </div>
+  <div className='box boxFive'>
+    <div className='box-Five-container'>
+    <iframe className='iframe'
+      width='45.4%'
+      height='316px'
+            title="google-map"
+            src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD8lEgqTZPBwI4VRUM6YoGc8_S6lvziCSc&q=Salt+Lake+City,+UT/" allowFullScreen>
+          </iframe>
   </div>
   </div>
   </div>

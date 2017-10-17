@@ -30,8 +30,8 @@ align-content: center;
 .nav-home {
   font-size: 10px;
   font-weight: bold;
-  color: #5E5C5C;
-  padding-left: 40px;
+  color: #444343;
+  padding-right: 40px;
 } 
 
 
@@ -54,7 +54,6 @@ align-content: center;
 }
 
 .nav-what {
-  padding-left: 40px;
   font-size: 10px;
   font-weight: bold;
   color: #5E5C5C;
@@ -62,13 +61,13 @@ align-content: center;
 }
 
 .nav-contacts {
-  padding-left: 40px;
   font-size: 10px;
   font-weight: bold;
   color: #5E5C5C;
 }
 
 .nav-prices {
+  font-size: 10px;
   padding-left: 45px;
   font-size: 10px;
   font-weight: bold;
@@ -76,6 +75,7 @@ align-content: center;
 }
 
 .nav-testimonials {
+  padding-left: 45px;
   font-size: 10px;
   font-weight: bold;
   color: #5E5C5C;

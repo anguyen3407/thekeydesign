@@ -58,6 +58,7 @@
     line-height: 40px;
     color: #5C5A5A;
     padding: 0px 30px 0px 30px;
+    margin-top: 30px;
 }
 
 .boxTwo {
@@ -69,6 +70,7 @@
     border: 1px solid #848181;
     width: 100%;
     height: 100%;
+    margin-top: 30px;
     margin-right: 40px;
     margin-left: 20px;
     background: white;
@@ -91,7 +93,7 @@
     align-items: center;
     letter-spacing: 2px;
     line-height: 40px;
-    background: #F3EFEF;
+    background: rgb(243, 239, 239);
 }
 
 .boxThree {
@@ -113,6 +115,7 @@
     line-height: 20px;
     font-size: 13px;
     color: #434141;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .boxFour {
@@ -134,4 +137,25 @@
     line-height: 40px;
     color: #5C5A5A;
     padding: 0px 30px 0px 30px;
+}
+
+.boxFive {
+    grid-column:3/5;
+    grid-row:7/10;
+}
+
+.box-Five-container {
+    border: 1px solid #848181;
+    width: 100%;
+    height: 100%;
+    margin-right: 40px;
+    margin-left: 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    letter-spacing: 2px;
+    line-height: 40px;
 }
