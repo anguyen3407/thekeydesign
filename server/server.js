@@ -3,7 +3,7 @@ require('dotenv').config();
 const express = require('express'),
   bodyParser = require('body-parser'),
   cors = require('cors'),
-  stripe = require('stripe')('sk_test_nJIKYXKLVHBFK8QmfdDak42R'),
+  stripe = require('stripe')(process.env.STRIPE_SECRETKEY),
   app = module.exports = express(),
   session = require('express-session'),
   massive = require('massive'),
@@ -149,6 +149,11 @@ app.post('/api/payment', function (req, res, next) {
 
     const dbInstance = req.app.get('db');
     const {
+      firstName,
+      lastName,
+      email_address,
+      billing_address,
+      phone_number, 
       standard,
       twilight,
       drone,
@@ -159,9 +164,41 @@ app.post('/api/payment', function (req, res, next) {
       zip,
       street_address
     } = req.body.options;
-    console.log(standard, twilight, drone, house, total, city, state, zip, street_address);
-    dbInstance.add_order([true, standard, twilight, drone, house, city, state, zip, street_address])
+    // console.log(      
+    //   firstName,
+    //   lastName,
+    //   email_address,
+    //   billing_address,
+    //   phone_number, 
+    //   standard, 
+    //   twilight, 
+    //   drone, 
+    //   house, 
+    //   total, 
+    //   city, 
+    //   state, 
+    //   zip, 
+    //   street_address);
+    dbInstance.add_order([      
+      firstName,
+      lastName,
+      email_address,
+      billing_address,
+      phone_number,
+      true, 
+      standard, 
+      twilight, 
+      drone, 
+      house, 
+      city, 
+      state, 
+      zip, 
+      street_address])
       .then(() => res.status(200).send())
+      .catch((err) => {
+
+        console.log('asdfghj',err)
+      })
 
 
 

@@ -9,15 +9,20 @@ class Prices extends Component {
   constructor(){
     super() 
     this.state = {
+      firstName: '',
+      lastName: '',
+      email_address: '',
+      billing_address: '',
+      phone_number: '',
       standard: false,
       twilight: false,
       drone: false,
       house: false,
       total: 675,
-      city: "",
-      state: "",
+      city: '',
+      state: '',
       zip: "", 
-      street_address: ""
+      street_address: ''
     }
 
 this.onToken=this.onToken.bind(this);
@@ -67,6 +72,26 @@ this.onToken=this.onToken.bind(this);
       }
     }
 
+    toggleFirstName(e) {
+      this.setState({firstName: e.target.value})
+   }
+
+    toggleLastName(e) {
+      this.setState({lastName: e.target.value})
+      }
+
+    toggleEmail(e) {
+      this.setState({email_address: e.target.value})
+    }
+
+    toggleBilling(e) {
+      this.setState({billing_address: e.target.value})
+    }
+
+    togglePhone(e) {
+      this.setState({phone_number: e.target.value})
+    }
+
     toggleCity(e) {
         this.setState({city: e.target.value})
     }
@@ -110,13 +135,19 @@ this.onToken=this.onToken.bind(this);
   <div className='box boxTwo'> 
   <div className='box-Two-container'>
     <div className='boxTwoBackground'>
+    First Name <input onChange={(e)=> {this.toggleFirstName(e)}}/> 
+    Last Name <input onChange={(e)=> {this.toggleLastName(e)}}/> 
+    Email Address <input onChange={(e)=> {this.toggleEmail(e)}}/> 
+    Billing Address <input onChange={(e)=> {this.toggleBilling(e)}}/> 
+    Phone Number <input onChange={(e)=> {this.togglePhone(e)}}/> 
+
       City <input onChange={(e)=> {this.toggleCity(e)}}/> 
 
       State <input onChange={(e)=> {this.toggleState(e)}}/>
 
       Zip <input onChange={(e)=> {this.toggleZip(e)}}/>
 
-      Address <input onChange={(e)=> {this.toggleAddress(e)}}/>
+      Staging Address <input onChange={(e)=> {this.toggleAddress(e)}}/>
 
       <br></br>
       Total:    ${this.state.total}.00
