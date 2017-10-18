@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './cart.css';
 import StripeCheckout from 'react-stripe-checkout';
-import stripe from '../../stripeKey';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
@@ -139,7 +138,7 @@ this.onToken=this.onToken.bind(this);
       <div className='stripe'>
       <StripeCheckout
                     token={this.onToken}
-                    stripeKey={ stripe }
+                    stripeKey={ process.env.REACT_APP_STRIPE_SECRETKEY }
                     amount={67500}
           />
           </div>
