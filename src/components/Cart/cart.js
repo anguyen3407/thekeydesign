@@ -3,6 +3,7 @@ import './cart.css';
 import StripeCheckout from 'react-stripe-checkout';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import Nav from '../Nav/Nav';
 
 class Cart extends Component {
   constructor(){
@@ -116,6 +117,7 @@ this.onToken=this.onToken.bind(this);
 
     return (
   <div className= 'Prices'>
+    <Nav/>
     <div className ="price-banner-container">
     <div className='stripe-inputs'></div>
       <div className='checkout-img-container'>
@@ -147,43 +149,6 @@ this.onToken=this.onToken.bind(this);
          
       </div>
      
-
-  {/* <div className= 'wrap'>
-  <div className='box boxOne'> 
-  </div>
-  <div className='box boxTwo'> 
-  <div className='box-Two-container'>
-    <div className='boxTwoBackground'>
-    First Name <input onChange={(e)=> {this.toggleFirstName(e)}}/> 
-    Last Name <input onChange={(e)=> {this.toggleLastName(e)}}/> 
-    Email Address <input onChange={(e)=> {this.toggleEmail(e)}}/> 
-    Billing Address <input onChange={(e)=> {this.toggleBilling(e)}}/> 
-    Phone Number <input onChange={(e)=> {this.togglePhone(e)}}/> 
-
-      City <input onChange={(e)=> {this.toggleCity(e)}}/> 
-
-      State <input onChange={(e)=> {this.toggleState(e)}}/>
-
-      Zip <input onChange={(e)=> {this.toggleZip(e)}}/>
-
-      Staging Address <input onChange={(e)=> {this.toggleAddress(e)}}/>
-
-      <br></br>
-      Total:    ${this.state.total}.00
-
-    </div>
-    <div classname='receipt-checkout'>
-      <div className='checkout-btn'>
-          <StripeCheckout
-                    token={this.onToken}
-                    stripeKey={ stripe }
-                    amount={67500}
-          />
-      </div>
-    </div>
-  </div>
-  </div>
-  </div> */}
   </div>
   );
   }
