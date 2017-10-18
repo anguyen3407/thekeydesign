@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './Prices.css';
-import StripeCheckout from 'react-stripe-checkout';
-import stripe from '../../stripeKey';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Footer from '../Footer/Footer';
