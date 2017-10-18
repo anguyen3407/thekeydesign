@@ -40,7 +40,7 @@ class Contacts extends Component {
       'message': this.state.message
     }).catch((err) => {
       console.log(err);
-      alert('error', err);
+      alert('Email Sent!', err);
     })
   }
 
