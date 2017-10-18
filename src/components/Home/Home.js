@@ -21,6 +21,23 @@ class Home extends Component {
 
     return (
 <div className= 'App'>
+<div className= 'Nav-bar'>
+    <div className='nav-container'>
+    <Link to='/' className='nav-home'>HOME</Link>
+      <Link to='/whatWeAre' className='nav-who'> ABOUT </Link>
+      <Link to='/contacts' className='nav-contacts'>CONTACTS</Link>
+      <Link to='/prices' className='nav-prices'>PRICES / SERVICES</Link>
+      {/* <Link to='/' className='nav-testimonials'>TESTIMONIALS</Link> */}
+      <a className='auth0' href={'/auth' }>
+          <button className='signup-buttontheme'><font face="Lato"> LOG IN</font></button> </a>
+      <div className = 'insta-img'>
+      <a href="https://instagram.com/thekeydesignstaging" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram fa-5x"> 
+        <img src = "https://i.imgur.com/dO8XeAB.png" width='21px' height="20px" alt='instagram'/> </i></a>
+      <a href="https://www.facebook.com/TheKeyDesign1/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook fa-5x">
+        <img src = "https://i.imgur.com/gogxbMd.png" width='21px' height="20px" alt='facebook'/></i></a>
+    </div>
+  </div>
+</div>
 <div className = 'banner'>
 <div className = 'banner-img'>
 <img src="https://i.imgur.com/tUJTT0e.png" width="250" height="180" alt="The Key Design"/>
@@ -126,13 +143,13 @@ class Home extends Component {
 
 
   <div className='Testimonials-container'>
-    <div className='Testimonials'> - PEOPLE LOVE US - 
+    <div className='Testimonials'> <div classname="peopleLOVE"> <font color="tan">-</font> PEOPLE LOVE US <font color="tan">-</font>  </div>
       <div className='testmonial-box'>
       <div className='testimonial-text'> 
-        <img src='https://d30y9cdsu7xlg0.cloudfront.net/png/19279-200.png' width='40px' height='40px' className='quote-left' alt=''/> 
+        <img src='https://i.imgur.com/uHZmVSp.png' width='40px' height='40px' className='quote-left' alt=''/> 
        <h4>  I’ve been a Realtor for many years. The Key Design has been staging most of my listings since the opened their business. 
          The Key Design designers have an eye for beauty and can make a drab property spring to life with their staging.  Our chances of selling are dramatically increased due to their amazing service and talent. </h4>
-        <img src='https://d30y9cdsu7xlg0.cloudfront.net/png/19278-200.png' width='40px' height='40px' className='quote-right' alt=''/> 
+        <img src='https://i.imgur.com/jnsJ6Za.png' width='40px' height='40px' className='quote-right' alt=''/> 
         </div>
         <div className='testimonial-name'> - Monica McQueen | The McQueen Team</div>
         <br></br>
@@ -147,10 +164,10 @@ class Home extends Component {
 
 
     <div className='scroll-contain'>
-  <a href="top" className='scroll'>scroll to top</a>
+  <a href="top" className='scroll'><font color='lightcoral'>scroll to top</font></a>
   </div>
   </div>
-  <Carousel>
+  {/* <Carousel>
   <div className="carousel carousel-slider" styles="width: 80%;height: 30%;">
     <button type="button" className="control-arrow control-prev"></button>
     <div className="slider-wrapper axis-horizontal">
@@ -176,7 +193,7 @@ class Home extends Component {
           </div>
           </div>
                                  
-                        </div>
+                        </div> */}
                         {/* <button type="button" className="control-arrow control-next control-disabled">
                           </button>
                           <ul className="control-dots">
@@ -192,8 +209,8 @@ class Home extends Component {
                                       </li>
                                       </ul>
                                       <p className="carousel-status">5 of 5</p> */}
-                                      </div>
-  </Carousel>
+                                      {/* </div>
+  </Carousel> */}
   < Footer />
 </div>
 

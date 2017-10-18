@@ -3,7 +3,7 @@ body {
 }
 
 .first-box {
-  padding: 65px 0px 40px 0px;
+  padding: 65px 0px 0px 0px;
 }
 
 
@@ -122,17 +122,32 @@ a {
   font-weight: lighter;
 }
 
+.peopleLOVE {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: center;
+}
+
+.peopleloveus {
+  color: lightcoral;
+}
+
 .testimonial-text h4 {
   letter-spacing: 2px;
   font-size: 16px;
   font-weight: lighter;
   padding-top: 15px;
+  color: white;
 }
 
 .testimonial-name {
   font-size: 13px;
   font-weight: bold;
   padding-left: 350px;
+  color: white;
 }
 
 .Testimonials-container {
@@ -162,7 +177,7 @@ a {
 .testmonial-box {
   width: 94%;
   height: 200px;
-  background: rgba(228, 243, 244, 0.77);
+  background: rgba(202, 179, 152, 0.62);
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -275,20 +290,35 @@ a {
 }
 
 .Bathroom:hover {
-  color: rgba(152, 148, 148, 0.57);
+  color: lightcoral;
 }
 
 .Bedroom:hover {
-  color: rgba(152, 148, 148, 0.57);
+  color: lightcoral;
 }
 
 .livingRoom:hover {
-  color: rgba(152, 148, 148, 0.57);
+  color: lightcoral;
 }
 
 .Kitchen:hover {
-  color: rgba(152, 148, 148, 0.57);
+  color: lightcoral;
 }
 
 
 
+.signup-buttontheme {
+  padding-left: 45px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 10px;
+  color: #5E5C5C;
+  letter-spacing: 4px;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  outline: none;
+}
+
+.signup-buttontheme:hover {
+  color: lightcoral;
+}

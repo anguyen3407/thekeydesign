@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import Nav from './components/Nav/Nav';
 import router from './router';
 
 class App extends Component {
@@ -19,7 +18,7 @@ class App extends Component {
 <div className = "app">
 
   <div className = "first-box">
-    <Nav/>
+
     {router}
   </div>
 

@@ -69,13 +69,13 @@ passport.use( new Auth0Strategy({
   })
   app.get('/auth', passport.authenticate('auth0'));
   app.get('/auth/callback', passport.authenticate('auth0',{
-      successRedirect: 'http://localhost:3002/#/admin',
+      successRedirect: `${process.env.SERVERHOST}/#/admin`,
       failureRedirect: '/auth'
   }))
 
   app.get('/auth/logout', (req,res) => {
       req.logOut();
-      res.redirect(302, 'https://annienguyen.auth0.com/v2/logout?returnTo=http%3A%2F%2Flocalhost%3A3002&client_id=Fn1FdZ9y6co8yB4qwMGHyz3wLPmFsLoj')
+      res.redirect(302, `https:${process.env.AUTH_DOMAIN}/v2/logout?returnTo=${process.ENV.SERVERHOST}`)
   })
 
   app.get('/api/user',  passport.authenticate('auth0'), (req, res) => {
@@ -101,7 +101,7 @@ app.post('/api/sendEmail', (req, res) => {
     to: 'a.nguyen8778@yahoo.com',
     subject: req.body.email,
     text: "you have a submission with the following details ... From: " +req.body.user_email+ "To:" +req.body.email+ "Message:" +req.body.message,
-    html: '<ul><li>From: '+req.body.user_email+'</li><li>To: '+req.body.email+'</li><li>Message: <p>'+req.body.message+'</p></li></ul>'
+    html: '<ul ><li>From: '+req.body.user_email+'</li><li>To: '+req.body.email+'</li><li>Message: <p>'+req.body.message+'</p></li></ul>'
   };
   console.log(mailOptions)
   transporter.sendMail(mailOptions, function (error, response) {

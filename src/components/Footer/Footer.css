@@ -82,3 +82,27 @@
   .insta-fb-img {
     margin-right: 30px;
   }
+
+  .foot-home:hover {
+    color: lightcoral;
+  }
+
+  .foot-who:hover {
+    color: lightcoral;
+  }
+
+  .foot-what:hover {
+    color: lightcoral;
+  }
+
+  .foot-contacts:hover {
+    color: lightcoral;
+  }
+
+  .foot-prices:hover {
+    color: lightcoral;
+  }
+
+  .foot-testimonials:hover {
+    color: lightcoral;
+  }

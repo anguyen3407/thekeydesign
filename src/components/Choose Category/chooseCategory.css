@@ -1,0 +1,79 @@
+
+.wrap-kitchen {
+    display: grid;
+    grid-template-columns: .5fr 3fr .5fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1em;
+    justify-content: stretch;
+    align-items: stretch; 
+    width: 100%;
+    color: #444343;
+}
+
+.kitchenBox1-Wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-auto-rows: minmax(100px, auto); */
+    grid-gap: .5em;
+    /* justify-content: stretch;
+    align-items: stretch;  */
+    width: 100%;
+    color: #444343;
+}
+
+.kitchenBoxWrap1 {
+    height:200px;
+    border: 1px solid green;
+}
+.kitchenBoxWrap2 {
+    height:200px;
+    border: 1px solid green;
+}
+.kitchenBoxWrap3 {
+    height:200px;
+    border: 1px solid green;
+}
+.kitchenBoxWrap4 {
+    height:200px;
+    border: 1px solid green;
+}
+
+.kitchenBox1 {
+    height: 200px;
+    }
+
+.kitchenBox2 {
+    height: 300px;
+    border: 1px solid red;
+}
+
+.kitchenBox3 {
+    height: 200px;
+
+}
+
+.kitchenBox4 {
+    height: 200px;
+
+}
+
+.kitchenBox5 {
+    height: 200px;
+    border: 1px solid red;
+}
+
+.kitchenBox6 {
+    height: 200px;
+
+}
+
+.kitchenBox7 {
+    height: 200px;
+
+}
+
+.kitchenBox8 {
+    height: 200px;
+    border: 1px solid red;
+}
+

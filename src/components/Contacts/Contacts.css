@@ -1,134 +1,4 @@
-.Contacts {
-}
-
-.emptyspace {
-    width: 100%;
-    height: 20px;
-}
-
-.map-box {
-    width: 100%;
-    height: 350px;
-    position: relative;
-}
-
-.contact-box-container {
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: flex-start;
-    align-content: center;
-    position: absolute;
-    z-index: 3;
-    right: 250px;
-    bottom: 270px;
-}
-
-.contact-box {
-    width: 330px;
-    height: 220px;
-    background-color: #E8E3E3;;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: flex-start;
-    align-content: center;
-    color: rgba(255, 255, 255, 0.74);
-    position: absolute;
-}
-
-
-
-.iframe {
-    border: none;
-    z-index: 1;
-    position: absolute;
-}
-
-.message-box-container {
-    padding-top: 110px;
-    width: 100%;
-    height: 350px;
-}
-
-.message-box {
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
-    align-content: center;
-    outline-style: none;
-}
-
-/* .messageInput {
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-}
-
-.messageInput-container {
-    margin-top: 20px;
-    background-color: #E8E3E3;
-    width: 400px;
-    height: 200px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    outline-style: none;
-}
-
-.messageInput-container2 {
-    margin-top: 20px;
-    width: 400px;
-    height: 200px;
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
-    align-content: center;
-    outline-style: none;
-}
-
-.messageInput-container2-box1 {
-    background-color: #E8E3E3;
-    width: 95%;
-    height: 30%;
-    margin: 0 0 0 5px;
-    outline-style: none;
-}
-
-.messageInput-container2-box2{
-    background-color: #E8E3E3;
-    width: 95%;
-    height: 30%;
-    margin: 5px 0 0 5px;
-    outline-style: none;
-    font-size: 18px;
-}
-
-.messageInput-container2-box3 {
-    width: 95%;
-    height: 40%;
-    margin: 5px 0 0 5px;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-}
- */
-
-
-
- .ContactsImgContainer {
+.ContactsImgContainer {
      width: 100%;
      height: 735px;
      background-image: url('https://i.imgur.com/dxYd4j6.jpg');
@@ -142,17 +12,16 @@
  }
 
  .contacts-words {
-     margin: 60px 0 0 80px;
+     margin: 60px 0 0 60px;
      width: 50%;
      height: 20%;
-     /* border: 1px solid red; */
      display: flex;
      flex-direction: row;
      flex-wrap: nowrap;
      justify-content: center;
      align-items: flex-end;
      align-content: flex-end;
-     color: #301F1C;
+     color: white;
      letter-spacing: 3px;
      font-size: 46px;
      text-shadow: -1px 0 rgba(255, 255, 255, 0.55);
@@ -172,26 +41,26 @@
  .contacts_box_container {
     width: 30%;
     height: 80%;
-    margin: 10px 0 40px 300px;
-    background-color: rgba(238, 235, 235, 0.91);
+    margin: 10px 0 40px 18%;
+    background-color: rgb(255, 255, 255);
     font-size: 18px;
     letter-spacing: 2px;
     outline-style: none;
     color: #6E6D6D;
     padding: 40px;
+    border: none;
  }
 
  .contacts_box_container2 {
     width: 20%;
     height: 230px;
     margin: 10px 0 0px 30px;
-    background-color: rgba(238, 235, 235, 0.91);
+    background-color: rgb(255, 255, 255);
     font-size: 18px;
     letter-spacing: 2px;
     outline-style: none;
     color: #6E6D6D;
     padding: 40px;
-    border: 1px solid #838181;
     display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;

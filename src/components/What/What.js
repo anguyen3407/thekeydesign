@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './What.css';
 import Footer from '../Footer/Footer';
 import video from '../../video/The Key Design Promo - Medium.mp4';
+import Nav from '../Nav/Nav';
 
 class What extends Component {
   // constructor () {
@@ -16,8 +17,16 @@ class What extends Component {
     return (
 
 <div className= 'hi'>
-
-<div className='b-container'>
+<Nav/>
+<div className='about'>
+  <div ClassName='about-banner-container'>
+  <div className='about-clear'></div>
+  <div className='about-video'>
+    <img src='https://i.imgur.com/38ZRz9f.jpg' width='100%' height='100%'/>
+  </div>
+</div>
+</div>
+{/* <div className='b-container'>
 <video loop muted preload='auto' autoPlay width='100%' height='40%'>
 <source src={video} type="video/mp4"/>
 </video>
@@ -63,7 +72,7 @@ class What extends Component {
 </div>
 </div>
 <div className='break'>
-      </div>
+      </div> */}
 <Footer />
 </div>
 
