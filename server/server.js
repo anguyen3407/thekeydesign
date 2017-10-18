@@ -77,7 +77,7 @@ passport.use( new Auth0Strategy({
 
   app.get('/auth/logout', (req,res) => {
       req.logOut();
-      res.redirect(302, `https:${process.env.AUTH_DOMAIN}/v2/logout?returnTo=${process.ENV.SERVERHOST}`)
+      res.redirect(302, `https:${process.env.AUTH_DOMAIN}/v2/logout?returnTo=${process.env.SERVERHOST}`)
   })
 
   app.get('/api/user',  passport.authenticate('auth0'), (req, res) => {
