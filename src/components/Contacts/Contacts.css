@@ -92,7 +92,7 @@
  }
 
  .send-btn:hover {
- background-color: rgba(59, 58, 58, 0.36);
+ background-color: lightcoral;
  color: white;
  font-weight: lighter;
  letter-spacing: 3px;

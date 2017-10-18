@@ -119,9 +119,9 @@ this.onToken=this.onToken.bind(this);
   <div className= 'Prices'>
     <Nav/>
     <div className ="price-banner-container">
-    <div className='stripe-inputs'></div>
+    <div className='stripe-inputs'><div className='checkWords'>CHECKOUT</div></div>
       <div className='checkout-img-container'>
-        <img src='https://i.imgur.com/38ZRz9f.jpg' width='100%' height='100%'/>
+        <img className='checkoutimg' src='https://i.imgur.com/38ZRz9f.jpg' width='100%' height='100%'/>
       </div>
       <div className='checkout-empty'>
       <div>First Name <input className='inputBoxes' onChange={(e)=> {this.toggleFirstName(e)}}/> 
@@ -137,11 +137,12 @@ this.onToken=this.onToken.bind(this);
       <div>Zip <input className='inputBoxes' onChange={(e)=> {this.toggleZip(e)}}/>
 
       Staging Address <input className='inputBoxes' onChange={(e)=> {this.toggleAddress(e)}}/></div>
-      <div className='stripe'>
+      <div className='striper'>
       <StripeCheckout
                     token={this.onToken}
                     stripeKey={ process.env.REACT_APP_STRIPE_SECRETKEY }
                     amount={67500}
+                    className='striperrr'
           />
           </div>
       </div>

@@ -37,6 +37,7 @@ class What extends Component {
 <div className='ABOUTUSCONTAIN'><div className="team"> 
       <br></br>
       <div className='allemployees'>
+        <div className='cindy-name'>CINDY KASTELER-MELLOR</div>
       <div className='img1-container'>
         <img src='https://i.imgur.com/5sNdSMY.png' className='img1' width='180px' height='245px'alt=''/>
         <div className='team-cindy'>Cindy studied Interior and Fashion Design at Utah State University where her talent was noticed and she was awarded a full scholarship (Professors Choice Award) for her outstanding work at the Historical Costume Museum. 
@@ -44,6 +45,7 @@ class What extends Component {
         She has been a real estate investor for almost 16 years as she worked for the original owners of The Key Designers Home Staging for three years and then joined forces with Lisa and Courtney to purchase the company. 
         She enjoys putting together original designs for individuals, as well as, home builders and commercial projects.</div>
       </div>
+      <div className='lisa-name'>LISA WHEAT</div>
      <div className='img2-container'> 
       <div className='team-lisa'> Lisa's design career began early on in a family-owned business in the international waterpark arena, designing waterslides and themed water attractions. 
         She then ventures with her father in an innovative furniture design business which took her to Southern California to open and manage a designer furniture showroom. 
@@ -53,6 +55,7 @@ class What extends Component {
         <img src='https://i.imgur.com/AjZsdoN.png' className='img2'  width='180px' height='245px' alt=''/>  
  
      </div>
+     <div className='cindy-name'>COURTNEY CLARK</div>
      <div className='img3-container'>
        <img src='https://i.imgur.com/ygtQDFm.png' className='img3' width='170px' height='235px' alt=''/>
        <div className='team-courtney'>Courtney has an extensive background in customer service, office management, sales and risk management. 
