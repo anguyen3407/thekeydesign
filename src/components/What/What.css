@@ -1,7 +1,11 @@
-
 .about {
-width: 100%;
-height: 400px;
+    width: 100%;
+    height: 400px;
+}
+
+.what-hi {
+    height: auto;
+    width: 100%;
 }
 
 .emptyaboutbox {
@@ -31,12 +35,12 @@ height: 400px;
     height: 30%;
     width: 91.4%;
     position: absolute;
-    border: 4px solid  rgba(243, 237, 237, 0);
+    border: 4px solid rgba(243, 237, 237, 0);
     display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     align-content: center;
     line-height: 50px;
     padding: 25px 0 0 0px;
@@ -65,15 +69,17 @@ height: 400px;
     height: 1400px;
     margin-top: 100px;
 }
+
 .img1 {
     padding: 20px 20px 0px 200px;
     margin-left: 30px;
     border-left: none;
     border-top: 3px solid rgba(243, 237, 237, 0.47);
     border-bottom: 3px solid rgba(243, 237, 237, 0.47);
-    border-right:3px solid rgba(243, 237, 237, 0.47);
+    border-right: 3px solid rgba(243, 237, 237, 0.47);
 }
-.img2{
+
+.img2 {
     float: right;
     padding: 20px 200px 0px 20px;
     margin-right: 30px;
@@ -88,7 +94,7 @@ height: 400px;
     border-left: none;
     border-top: 3px solid rgba(243, 237, 237, 0.47);
     border-bottom: 3px solid rgba(243, 237, 237, 0.47);
-    border-right:3px solid rgba(243, 237, 237, 0.47);
+    border-right: 3px solid rgba(243, 237, 237, 0.47);
 }
 
 .img1-container {
@@ -97,8 +103,8 @@ height: 400px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
+    justify-content: space-between;
+    align-items: center;
     align-content: center;
 }
 
@@ -108,8 +114,8 @@ height: 400px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
+    justify-content: center;
+    align-items: center;
     align-content: center;
 }
 
@@ -119,8 +125,8 @@ height: 400px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
+    justify-content: center;
+    align-items: center;
     align-content: center;
 }
 
@@ -128,8 +134,8 @@ height: 400px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
+    justify-content: center;
+    align-items: center;
     align-content: center;
 }
 
@@ -137,18 +143,18 @@ height: 400px;
     height: 100%;
     width: 100%;
     position: relative;
-    padding-right: 300px;
+    padding-right: 70px;
     border-left: none;
     border-top: 1px solid rgba(243, 237, 237, 0.47);
     border-bottom: 1px solid rgb(243, 237, 237);
     padding-left: 100px;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding-bottom: 70px;
+    padding-top: 100px;
     margin-right: 40px;
     display: flex;
-	justify-content: center;
-	align-items: center;
-    align-content: center;   
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     line-height: 25px;
     letter-spacing: 1px;
 }
@@ -157,17 +163,17 @@ height: 400px;
     height: 100%;
     width: 100%;
     position: relative;
-    padding-right: 300px;
+    padding-right: 200px;
     border-left: none;
-    padding-top: 50px;
+    padding-top: 70px;
     border-top: 1px solid rgba(243, 237, 237, 0.47);
     border-bottom: 1px solid rgb(243, 237, 237);
     padding-left: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     margin-right: 40px;
     display: flex;
-	justify-content: center;
-	align-items: center;
+    justify-content: center;
+    align-items: center;
     align-content: center;
     line-height: 25px;
     letter-spacing: 1px;
@@ -177,7 +183,7 @@ height: 400px;
     height: 100%;
     width: 100%;
     position: relative;
-    padding-left: 300px;
+    padding-left: 200px;
     border-left: none;
     padding-top: 50px;
     border-top: 1px solid rgba(243, 237, 237, 0.47);
@@ -186,8 +192,8 @@ height: 400px;
     padding-bottom: 50px;
     margin-left: 40px;
     display: flex;
-	justify-content: center;
-	align-items: center;
+    justify-content: center;
+    align-items: center;
     align-content: center;
     line-height: 25px;
     letter-spacing: 1px;

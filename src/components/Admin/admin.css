@@ -1,19 +1,17 @@
 .admin {
-    width: 100%;
-    height: auto;
-    display: flex;
+	width: 100%;
+	height: auto;
+	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: stretch;
 	align-content: space-around;
-} 
-    
+}
 
 .standard {
-
-    height: 300px;
-    display: flex;
+	height: 300px;
+	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: flex-start;
@@ -22,9 +20,8 @@
 }
 
 .twilight {
-
-    height: 300px;
-    display: flex;
+	height: 300px;
+	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: flex-start;
@@ -42,8 +39,8 @@
 	font-weight: bold;
 	font-family: 'Lato', sans-serif;
 	outline: none;
-  }
-  
-  .logout-buttontheme:hover {
+}
+
+.logout-buttontheme:hover {
 	color: lightcoral;
-  }
+}

@@ -2,27 +2,27 @@
     width: 100%;
     height: 550px;
     display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     align-content: stretch;
     position: relative;
 }
 
-.Order-Summary-Container{
+.Order-Summary-Container {
     width: 20%;
     height: 500px;
     background-color: #FFFFFF;
-    border: 1px solid  rgba(243, 237, 237, 0.47);
+    border: 1px solid rgba(243, 237, 237, 0.47);
     box-shadow: 0px 1px 1px #C2C0C0;
     position: relative;
 }
 
 .order {
- margin: 20px 0px 0px 20px;
- height: 70%;
- width: 90%;
+    margin: 20px 0px 0px 20px;
+    height: 70%;
+    width: 90%;
 }
 
 .ordersummary {
@@ -41,10 +41,10 @@
     border-top: 1px solid rgba(243, 237, 237, 0.47);
     border-bottom: 1px solid rgba(243, 237, 237, 0.47);
     display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     align-content: center;
 }
 
@@ -54,24 +54,21 @@
     font-size: 14px;
 }
 
-
 .cart:hover {
-color: rgba(243, 237, 237, 0.47);
+    color: rgba(243, 237, 237, 0.47);
 }
 
-
-.prices-banner{
-width: 100%;
-height: 450px;
-position: absolute;
+.prices-banner {
+    width: 100%;
+    height: 450px;
+    position: absolute;
 }
 
 .price-titles {
-font-size: 18px;
-
+    font-size: 18px;
 }
 
-.price-coral{
+.price-coral {
     color: lightcoral;
     font-size: 70px;
     font-weight: 100;
@@ -80,16 +77,17 @@ font-size: 18px;
 }
 
 .nav-contacts:hover {
-color: lightcoral;
+    color: lightcoral;
 }
-.basic-package-description{
+
+.basic-package-description {
     width: 100%;
     height: 80px;
     display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     align-content: center;
     padding-bottom: 50px;
     color: #444343;
@@ -113,6 +111,7 @@ color: lightcoral;
     padding-top: 20px;
 }
 
+
 /* .add-btn-container {
     margin-left: 200px;
 }
@@ -128,7 +127,7 @@ color: lightcoral;
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 1em;
     justify-content: stretch;
-    align-items: stretch; 
+    align-items: stretch;
     width: 100%;
     color: #444343;
 }
@@ -145,41 +144,41 @@ color: lightcoral;
 }
 
 .boxOne {
-height: 400px;
+    height: 400px;
 }
 
 .boxTwo {
     height: 400px;
-    border: 4px solid  rgba(243, 237, 237, 0.47);
+    border: 4px solid rgba(243, 237, 237, 0.47);
 }
 
 .boxTwo:hover {
-    background-color:rgba(243, 237, 237, 0.47);
-    border:  4px solid  rgba(243, 237, 237, 0);
+    background-color: rgba(243, 237, 237, 0.47);
+    border: 4px solid rgba(243, 237, 237, 0);
     box-shadow: 0px 2px 2px #C2C0C0;
     transition: background-color .2s ease-in-out;
 }
 
 .boxThree {
     height: 400px;
-    border: 4px solid  rgba(243, 237, 237, 0.47);
+    border: 4px solid rgba(243, 237, 237, 0.47);
 }
 
 .boxThree:hover {
-    background-color:rgba(243, 237, 237, 0.47);
-    border:  4px solid  rgba(243, 237, 237, 0);
+    background-color: rgba(243, 237, 237, 0.47);
+    border: 4px solid rgba(243, 237, 237, 0);
     box-shadow: 0px 2px 2px #C2C0C0;
     transition: background-color .2s ease-in-out;
 }
 
 .boxFour {
     height: 400px;
-    border: 4px solid  rgba(243, 237, 237, 0.47);
+    border: 4px solid rgba(243, 237, 237, 0.47);
 }
 
 .boxFour:hover {
-    background-color:rgba(243, 237, 237, 0.47);
-    border:  4px solid  rgba(243, 237, 237, 0);
+    background-color: rgba(243, 237, 237, 0.47);
+    border: 4px solid rgba(243, 237, 237, 0);
     box-shadow: 0px 2px 2px #C2C0C0;
     transition: background-color .2s ease-in-out;
 }
@@ -188,46 +187,43 @@ height: 400px;
     height: 400px;
 }
 
-
 .boxSix {
     height: 400px;
 }
 
-
 .boxSeven {
     height: 400px;
-    border: 4px solid  rgba(243, 237, 237, 0.47);
+    border: 4px solid rgba(243, 237, 237, 0.47);
     margin-bottom: 50px;
 }
 
 .boxSeven:hover {
-    background-color:rgba(243, 237, 237, 0.47);
-    border:  4px solid  rgba(243, 237, 237, 0);
+    background-color: rgba(243, 237, 237, 0.47);
+    border: 4px solid rgba(243, 237, 237, 0);
     box-shadow: 0px 2px 2px #C2C0C0;
     transition: background-color .2s ease-in-out;
 }
 
-.boxEight{
+.boxEight {
     height: 400px;
-    border: 4px solid  rgba(243, 237, 237, 0.47);
-
+    border: 4px solid rgba(243, 237, 237, 0.47);
 }
 
 .boxEight:hover {
-    background-color:rgba(243, 237, 237, 0.47);
-    border:  4px solid  rgba(243, 237, 237, 0);
+    background-color: rgba(243, 237, 237, 0.47);
+    border: 4px solid rgba(243, 237, 237, 0);
     box-shadow: 0px 2px 2px #C2C0C0;
     transition: background-color .2s ease-in-out;
 }
 
 .boxNine {
     height: 400px;
-    border: 4px solid  rgba(243, 237, 237, 0.47);
+    border: 4px solid rgba(243, 237, 237, 0.47);
 }
 
 .boxNine:hover {
-    background-color:rgba(243, 237, 237, 0.47);
-    border:  4px solid  rgba(243, 237, 237, 0);
+    background-color: rgba(243, 237, 237, 0.47);
+    border: 4px solid rgba(243, 237, 237, 0);
     box-shadow: 0px 2px 2px #C2C0C0;
     transition: background-color .2s ease-in-out;
 }
@@ -252,8 +248,8 @@ height: 400px;
 }
 
 .clickbuttons:hover {
-background-color: rgb(240, 128, 128);
-color: white;
+    background-color: rgb(240, 128, 128);
+    color: white;
 }
 
 .clickbuttoncontainer {

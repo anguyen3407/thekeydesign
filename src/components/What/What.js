@@ -15,9 +15,10 @@ class What extends Component {
   render() {
 
     return (
-
-<div className= 'heyaaa'>
+<div className='what-hi'>
 <Nav/>
+<div className= 'heyaaa'>
+
 <div className='emptyaboutbox'></div>
 <div className='about'>
   <div className='whitebehindvideo'> 
@@ -114,6 +115,7 @@ class What extends Component {
 </div>
 <div className='break'>
       </div> */}
+</div>
 <Footer />
 </div>
 

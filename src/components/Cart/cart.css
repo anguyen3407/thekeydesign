@@ -3,18 +3,17 @@
     width: 100%;
     height: 600px;
     display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .stripe-inputs {
-height: 100%;
-width: 50%;
-float: right;
-
+    height: 100%;
+    width: 50%;
+    float: right;
 }
 
 .checkout-img-container {
@@ -28,12 +27,12 @@ float: right;
     height: 70%;
     width: 80%;
     position: absolute;
-    border: 4px solid  rgba(243, 237, 237, 0.47);
+    border: 4px solid rgba(243, 237, 237, 0.47);
     display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
     align-content: center;
     line-height: 50px;
     padding: 25px 0 0 35px;
@@ -50,11 +49,11 @@ float: right;
     width: 40%;
     height: 200px;
     display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .stripe-inputs {
@@ -70,13 +69,13 @@ float: right;
     width: 100%;
     height: 200px;
     display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     align-content: center;
 }
 
 .striperrr {
- margin-right: 330px;
+    margin-right: 330px;
 }

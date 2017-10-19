@@ -124,11 +124,11 @@ a {
 
 .peopleLOVE {
   display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: flex-start;
-	align-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
 }
 
 .peopleloveus {
@@ -304,8 +304,6 @@ a {
 .Kitchen:hover {
   color: lightcoral;
 }
-
-
 
 .signup-buttontheme {
   padding-left: 45px;

@@ -132,15 +132,6 @@ class Home extends Component {
   </Link>
         </div>
 
-  {/* stopped at scott-sesoto */}
-        {/* <div className="Pic">
-          <img className = 'firstpic' src='https://i.imgur.com/VFv15Rt.jpg' width='100%' height='100%' alt='crowley'/>
-        </div>
-        <div className="Pic">
-          <img className = 'firstpic' src='https://i.imgur.com/MEVQyGS.jpg' width='100%' height='100%' alt='cindy-nicholaus'/>
-        </div> */}
-
-
 
   <div className='Testimonials-container'>
     <div className='Testimonials'> <div classname="peopleLOVE"> <font color="tan">-</font> PEOPLE LOVE US <font color="tan">-</font>  </div>
@@ -167,50 +158,7 @@ class Home extends Component {
   <a href="top" className='scroll'><font color='lightcoral'>scroll to top</font></a>
   </div>
   </div>
-  {/* <Carousel>
-  <div className="carousel carousel-slider" styles="width: 80%;height: 30%;">
-    <button type="button" className="control-arrow control-prev"></button>
-    <div className="slider-wrapper axis-horizontal">
-      <div className="slider animated" styles="transform: translate3d(-400%, 0px, 0px); transition-duration: 350ms;">
-        
-          <div className="legend-img">
-          <img src="https://i.imgur.com/N6NBUdc.jpg" width="100%" height="100%"/>
-          <p className="legend">Legend 1</p>
-          </div>
-                       
-                        </div>
-                        <div className="slider animated" styles="transform: translate3d(-400%, 0px, 0px); transition-duration: 350ms;">
-                        <div className="legend-img">
-          <img src="https://i.imgur.com/8dGfO00.jpg" width="100%" height="100%"/>
-          <p className="legend">Legend 2</p>
-          </div>
-          </div>
-
-          <div className="slider animated" styles="transform: translate3d(-400%, 0px, 0px); transition-duration: 350ms;">
-          <div className="legend-img">
-          <img src="https://i.imgur.com/DtWd6Rm.jpg" width="100%" height="100%"/>
-          <p className="legend">Legend 3</p>
-          </div>
-          </div>
-                                 
-                        </div> */}
-                        {/* <button type="button" className="control-arrow control-next control-disabled">
-                          </button>
-                          <ul className="control-dots">
-                            <li className="dot" value="0">
-                              </li>
-                              <li className="dot" value="1">
-                                </li>
-                                <li className="dot" value="2">
-                                  </li>
-                                  <li className="dot" value="3">
-                                    </li>
-                                    <li className="dot selected" value="4">
-                                      </li>
-                                      </ul>
-                                      <p className="carousel-status">5 of 5</p> */}
-                                      {/* </div>
-  </Carousel> */}
+ 
   < Footer />
 </div>
 
