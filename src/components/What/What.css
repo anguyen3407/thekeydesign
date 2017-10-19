@@ -18,10 +18,15 @@
     height: 600px;
 }
 
-.about-clear {
+/* .about-clear {
     height: 100%;
     width: 50%;
     float: right;
+} */
+
+.about-CLEAR {
+    width: 100%;
+    height:100px;
 }
 
 .about-video {
@@ -66,7 +71,7 @@
 
 .ABOUTUSCONTAIN {
     width: 100%;
-    height: 1400px;
+    height: auto;
     margin-top: 100px;
 }
 
@@ -143,14 +148,13 @@
     height: 100%;
     width: 100%;
     position: relative;
-    padding-right: 70px;
+    padding-right: 150px;
     border-left: none;
-    border-top: 1px solid rgba(243, 237, 237, 0.47);
-    border-bottom: 1px solid rgb(243, 237, 237);
+    border-top: 1px solid rgb(194, 191, 191);
+    border-bottom: 1px solid rgba(194, 191, 191, 0.51);
     padding-left: 100px;
-    padding-bottom: 70px;
-    padding-top: 100px;
-    margin-right: 40px;
+    padding-bottom: 30px;
+    padding-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,14 +167,13 @@
     height: 100%;
     width: 100%;
     position: relative;
-    padding-right: 200px;
+    padding-right: 150px;
     border-left: none;
-    padding-top: 70px;
-    border-top: 1px solid rgba(243, 237, 237, 0.47);
-    border-bottom: 1px solid rgb(243, 237, 237);
+    padding-top: 60px;
+    border-top: 1px solid rgb(194, 191, 191);
+    border-bottom: 1px solid rgba(194, 191, 191, 0.51);
     padding-left: 100px;
-    padding-bottom: 70px;
-    margin-right: 40px;
+    padding-bottom: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,12 +188,11 @@
     position: relative;
     padding-left: 200px;
     border-left: none;
-    padding-top: 50px;
-    border-top: 1px solid rgba(243, 237, 237, 0.47);
-    border-bottom: 1px solid rgb(243, 237, 237);
-    padding-right: 100px;
-    padding-bottom: 50px;
-    margin-left: 40px;
+    padding-top: 40px;
+    border-top: 1px solid rgb(194, 191, 191);
+    border-bottom: 1px solid rgba(194, 191, 191, 0.51);
+    padding-right: 150px;
+    padding-bottom: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,9 +206,14 @@
     width: 100%;
     font-size: 26px;
     margin-top: 40px;
-    margin-left: 800px;
     letter-spacing: 2px;
     font-weight: lighter;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: center;
 }
 
 .lisa-name {
@@ -214,7 +221,12 @@
     width: 100%;
     font-size: 26px;
     margin-top: 40px;
-    margin-left: 1750px;
     letter-spacing: 2px;
     font-weight: lighter;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: center;
 }

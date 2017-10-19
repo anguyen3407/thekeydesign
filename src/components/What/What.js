@@ -68,6 +68,7 @@ class What extends Component {
    </div>
    </div>
    </div>
+   <div className='about-CLEAR'></div>
 {/* <div className='b-container'>
 <video loop muted preload='auto' autoPlay width='100%' height='40%'>
 <source src={video} type="video/mp4"/>
