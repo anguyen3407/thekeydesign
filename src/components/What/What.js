@@ -35,12 +35,12 @@ class What extends Component {
   <div className='about-clear'></div>
 
 </div>
-<div className='ABOUTUSCONTAIN'><div className="team"> 
+<div className='ABOUTUSCONTAIN'>
       <br></br>
       <div className='allemployees'>
         <div className='cindy-name'>CINDY KASTELER-MELLOR</div>
       <div className='img1-container'>
-        <img src='https://i.imgur.com/5sNdSMY.png' className='img1' width='180px' height='245px'alt=''/>
+        <div className='img1border'><img src='https://i.imgur.com/5sNdSMY.png' className='img1' width='180px' height='245px'alt=''/></div>
         <div className='team-cindy'>Cindy studied Interior and Fashion Design at Utah State University where her talent was noticed and she was awarded a full scholarship (Professors Choice Award) for her outstanding work at the Historical Costume Museum. 
         Her entrepreneur spirit is manifested into the multiple successful business that she has built and sold. 
         She has been a real estate investor for almost 16 years as she worked for the original owners of The Key Designers Home Staging for three years and then joined forces with Lisa and Courtney to purchase the company. 
@@ -53,18 +53,17 @@ class What extends Component {
         Later, she continued her career and became the Executive Directer of the International Design Center consulting with hundreds of residential and commercial vendors in the builder and interior design communities. 
         She now directs her attention and passion in design and business development to The Key Design with her two "dream team" talented partners. 
         Once seeing this as a great industry with incredible opportunities, she has contributed in expanding and edifying this business to new horizons. </div>
-        <img src='https://i.imgur.com/AjZsdoN.png' className='img2'  width='180px' height='245px' alt=''/>  
+        <div className='img2border'> <img src='https://i.imgur.com/AjZsdoN.png' className='img2'  width='180px' height='245px' alt=''/>  </div>
  
      </div>
      <div className='cindy-name'>COURTNEY CLARK</div>
      <div className='img3-container'>
-       <img src='https://i.imgur.com/ygtQDFm.png' className='img3' width='170px' height='235px' alt=''/>
+     <div className='img3border'> <img src='https://i.imgur.com/ygtQDFm.png' className='img3' width='170px' height='235px' alt=''/></div>
        <div className='team-courtney'>Courtney has an extensive background in customer service, office management, sales and risk management. 
         She worked in the insurance industry for over nine years. She successfully managed the state licensing compliance department for over twenty agents. 
         She is not only skilled and talented in personal relations and outstanding sales, she manages and directs The Key Design Team and all of the moving pieces in the daily operations. 
         Her passion is sales, interior design and working closely with her clients to help achieve their vision. 
         Since co-owning The Key Design, she has successfully directed the sales and operations of the company to expand by 150% in less than one year. </div>
-   </div>
    </div>
    </div>
    </div>

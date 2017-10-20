@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './cart.css';
 import StripeCheckout from 'react-stripe-checkout';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 import Nav from '../Nav/Nav';
 
 class Cart extends Component {
@@ -121,7 +120,7 @@ this.onToken=this.onToken.bind(this);
     <div className ="price-banner-container">
     <div className='stripe-inputs'><div className='checkWords'>CHECKOUT</div></div>
       <div className='checkout-img-container'>
-        <img className='checkoutimg' src='https://i.imgur.com/38ZRz9f.jpg' width='100%' height='100%'/>
+        <img className='checkoutimg' src='https://i.imgur.com/38ZRz9f.jpg' width='100%' height='100%' alt=''/>
       </div>
       <div className='checkout-empty'>
       <div>First Name <input className='inputBoxes' onChange={(e)=> {this.toggleFirstName(e)}}/> 

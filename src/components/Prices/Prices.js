@@ -84,7 +84,7 @@ this.onToken=this.onToken.bind(this);
         <Nav/>
     <div className='price-banner-container'>
      <div className='prices-banner'>
-          <img src='https://i.imgur.com/m3cDqdS.jpg'width="100%" height="100%"/>
+          <img src='https://i.imgur.com/m3cDqdS.jpg'width="100%" height="100%" alt=''/>
           
           </div>
           <div className='Order-Summary-Container'>
