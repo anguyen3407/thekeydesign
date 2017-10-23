@@ -19,6 +19,7 @@ class Home extends Component {
   render() {
 
     return (
+      <div className='first-box'>
 <div className= 'App'>
 <div className= 'Nav-bar'>
     <div className='nav-container'>
@@ -159,6 +160,7 @@ class Home extends Component {
   </div>
  
   < Footer />
+</div>
 </div>
 
     );

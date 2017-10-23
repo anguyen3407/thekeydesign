@@ -212,11 +212,22 @@ class Admin extends Component {
                 )
             }
         })
+
+        const individualName = this.state.invoice_data.map((name, i) =>{
+            return (
+                <div key={i}>
+                <div>{name.firstname}</div>
+                <div>{name.lastname}</div>
+
+                </div>
+            )
+        })
                
     
       return (
 
     <div className="admin">
+        {individualName}
         <div className= 'Nav-bar'>
     <div className='nav-container'>
     <Link to='/' className='nav-home'>HOME</Link>

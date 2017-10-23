@@ -17,10 +17,10 @@ class App extends Component {
     return (
 <div className = "app">
 
-  <div className = "first-box">
+
 
     {router}
-  </div>
+
 
 </div>
 

@@ -23,7 +23,10 @@ import Bathroom from './components/Choose Category/bathroom';
 import LivingRoom from './components/Choose Category/livingRoom';
 import Admin from './components/Admin/admin';
 import Cart from './components/Cart/cart';
-
+import HomeMobile from './components/HomeMobile/HomeMobile';
+import ContactsMobile from './components/ContactsMobile/ContactsMobile';
+import PricesMobile from './components/PricesMobile/PricesMobile';
+import AboutMobile from './components/AboutMobile/AboutMobile';
 
 export default (
     <Switch>
@@ -49,5 +52,9 @@ export default (
     <Route path="/living-family-room" component={LivingRoom}/>
     <Route path='/admin' component={Admin}/>
     <Route path='/cart' component={Cart}/>
+    <Route path='/HomeMobile' component={HomeMobile}/>
+    <Route path='/AboutMobile' component={AboutMobile}/>
+    <Route path='/ContactsMobile' component={ContactsMobile}/>
+    <Route path='/PricesMobile' component={PricesMobile}/>
   </Switch>
 )

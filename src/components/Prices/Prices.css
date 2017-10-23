@@ -111,16 +111,6 @@
     padding-top: 20px;
 }
 
-
-/* .add-btn-container {
-    margin-left: 200px;
-}
-
-.addToCart-btn {
-    width: 200%;
-    height: 25px;
-} */
-
 .wrap {
     display: grid;
     grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr 1fr;

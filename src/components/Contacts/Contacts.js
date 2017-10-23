@@ -9,7 +9,7 @@ class Contacts extends Component {
     super()
     this.state = {
       user_email: "",
-      email: 'a.nguyen8778@yahoo.com',
+      email: 'info@thekeydesign.com',
       message: ""
     }
   }
