@@ -26,67 +26,6 @@ class Admin extends Component {
 
   
     render() {
-        var getFirstName = this.state.invoice_data.map((l)=>{
-            if(l.firstname){
-                return(
-                    <div>
-                        <div>
-                            {l.firstname}
-                        </div>
-                    </div>
-                )
-            }
-        })
-        var getLastName = this.state.invoice_data.map((r)=>{
-            if(r.lastname){
-                return(
-                    <div>
-                        <div>
-                            {r.lastname}
-                        </div>
-                    </div>
-                )
-            }
-        })
-        var getEmailAddress = this.state.invoice_data.map((w)=>{
-            if(w.email_address){
-                return(
-                    <div>
-                        <div>
-                            {w.email_address}
-                        </div>
-                    </div>
-                )
-            }
-        })
-        var getBillingAddress = this.state.invoice_data.map((p)=>{
-            if(p.billing_address){
-                return(
-                    <div>
-                        <div>
-                            {p.billing_address}
-                        </div>
-                    </div>
-                )
-            }
-        })
-        var getPhoneNumber = this.state.invoice_data.map((u)=>{
-            if(u.phone_number){
-                return(
-                    <div>
-                        <div>
-                            {u.phone_number}
-                        </div>
-                    </div>
-                )
-            }
-        })
-
-
-
-
-
-
 
         var getStandard = this.state.invoice_data.map((x)=>{
             if(x.standard_photography){
@@ -162,62 +101,23 @@ class Admin extends Component {
             }
         })
 
-        var getCity = this.state.invoice_data.map((invoice)=>{
-            if(invoice.city){
-                return(
-                    <div>
-                        <div>
-                            {invoice.city}
-                        </div>
-                    </div>
-                )
-            }
-        })
-
-        var getState = this.state.invoice_data.map((c)=>{
-            
-            if(c.state){
-                return(
-                    <div>
-                        <div>
-                            {c.state}
-                        </div>
-                    </div>
-                )
-            }
-        })
-
-        var getZip = this.state.invoice_data.map((d)=>{
-            
-            if(d.zip){
-                return(
-                    <div>
-                        <div>
-                            {d.zip}
-                        </div>
-                    </div>
-                )
-            }
-        })
-
-        var getAddress = this.state.invoice_data.map((e)=>{
-            
-            if(e.street_address){
-                return(
-                    <div>
-                        <div>
-                            {e.street_address}
-                        </div>
-                    </div>
-                )
-            }
-        })
-
         const individualName = this.state.invoice_data.map((name, i) =>{
             return (
                 <div key={i}>
                 <div>{name.firstname}</div>
                 <div>{name.lastname}</div>
+                <div>{name.emailAddress}</div>
+                <div>{name.billing_address}</div>
+                <div>{name.phone_number}</div>
+                <div>{name.standard_photography}</div>
+                <div>{name.twilight_photography}</div>
+                <div>{name.drone_photography}</div>
+                <div>{name.cleaning}</div>
+                <div>{name.city}</div>
+                <div>{name.state}</div>
+                <div>{name.zip}</div>
+                <div>{name.street_address}</div>
+                
 
                 </div>
             )
@@ -227,7 +127,6 @@ class Admin extends Component {
       return (
 
     <div className="admin">
-        {individualName}
         <div className= 'Nav-bar'>
     <div className='nav-container'>
     <Link to='/' className='nav-home'>HOME</Link>
@@ -244,25 +143,8 @@ class Admin extends Component {
     </div>
   </div>
 </div>
-        <div className='admin-boxes'>
-            <h4>First </h4>
-            {getFirstName}</div>
-
-        <div className='admin-boxes'>
-        <h4>Last</h4>
-             {getLastName}</div>
-
-        <div className='admin-boxes'>
-        <h4>Email Address</h4> 
-        {getEmailAddress}</div>
-
-        <div className='admin-boxes'>
-        <h4>Billing Address</h4>
-        {getBillingAddress}</div>
-
-        <div className='admin-boxes'> 
-        <h4># </h4>
-        {getPhoneNumber}</div>
+       
+{individualName}
 
         <div className='admin-boxes'>
         <h4>Standard</h4>
@@ -279,22 +161,6 @@ class Admin extends Component {
         <div className='admin-boxes'>
         <h4>Deluxe Drone</h4>
             {getCleaning}</div>
-
-        <div className='admin-boxes'>
-        <h4>City</h4>
-            {getCity}</div>
-
-        <div className='admin-boxes'>
-        <h4>State</h4>
-            {getState}</div>
-
-        <div className='admin-boxes'>
-        <h4>Zip</h4>
-            {getZip}</div>
-
-        <div className='admin-boxes'>
-        <h4>Street Address</h4>
-            {getAddress}</div>
     </div>
 
     );
