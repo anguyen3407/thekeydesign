@@ -27,96 +27,98 @@ class Admin extends Component {
   
     render() {
 
-        var getStandard = this.state.invoice_data.map((x)=>{
-            if(x.standard_photography){
-                return(
-                    <div>
-                        <input type="checkbox" checked="checked" value="123" name="checked"/>
-                    </div>
-                )
-            }
-            else{
-                return(
-                    <div>
-                        <input type="checkbox" checked="false" value="123" name="not-checked"/>
-                    </div>
-                )
-            }
-        })
+        // var getStandard = this.state.invoice_data.map((x)=>{
+        //     if(x.standard_photography){
+        //         return(
+        //             <div>
+        //                 <input type="checkbox" checked="checked" value="123" name="checked"/>
+        //             </div>
+        //         )
+        //     }
+        //     else{
+        //         return(
+        //             <div>
+        //                 <input type="checkbox" checked="false" value="123" name="not-checked"/>
+        //             </div>
+        //         )
+        //     }
+        // })
 
-        var getTwilight = this.state.invoice_data.map((y)=>{
+        // var getTwilight = this.state.invoice_data.map((y)=>{
             
-            if(y.twilight_photography){
+        //     if(y.twilight_photography){
 
-                return(
-                    <div>
-                        <input type="checkbox" checked="checked" value="123" name="checked"/>
-                    </div>
-                )
-            }
-            else{
-                return(
-                    <div>
-                        <input type="checkbox"  value="123" name="not-checked"/>
-                    </div>
-                )
-            }
-        })
+        //         return(
+        //             <div>
+        //                 <input type="checkbox" checked="checked" value="123" name="checked"/>
+        //             </div>
+        //         )
+        //     }
+        //     else{
+        //         return(
+        //             <div>
+        //                 <input type="checkbox"  value="123" name="not-checked"/>
+        //             </div>
+        //         )
+        //     }
+        // })
 
-        var getDrone = this.state.invoice_data.map((z)=>{
+        // var getDrone = this.state.invoice_data.map((z)=>{
             
-            if(z.drone_photography){
+        //     if(z.drone_photography){
 
-                return(
-                    <div>
-                        <input type="checkbox" checked="checked" value="123" name="checked"/>
-                    </div>
-                )
-            }
-            else{
-                return(
-                    <div>
-                        <input type="checkbox"  value="123" name="not-checked"/>
-                    </div>
-                )
-            }
-        })
+        //         return(
+        //             <div>
+        //                 <input type="checkbox" checked="checked" value="123" name="checked"/>
+        //             </div>
+        //         )
+        //     }
+        //     else{
+        //         return(
+        //             <div>
+        //                 <input type="checkbox"  value="123" name="not-checked"/>
+        //             </div>
+        //         )
+        //     }
+        // })
  
-        var getCleaning = this.state.invoice_data.map((a)=>{
+        // var getCleaning = this.state.invoice_data.map((a)=>{
             
-            if(a.cleaning){
+        //     if(a.cleaning){
 
-                return(
-                    <div>
-                        <input type="checkbox" checked="checked" value="123" name="checked"/>
-                    </div>
-                )
-            }
-            else{
-                return(
-                    <div>
-                        <input type="checkbox"  value="123" name="not-checked"/>
-                    </div>
-                )
-            }
-        })
+        //         return(
+        //             <div>
+        //                 <input type="checkbox" checked="checked" value="123" name="checked"/>
+        //             </div>
+        //         )
+        //     }
+        //     else{
+        //         return(
+        //             <div>
+        //                 <input type="checkbox"  value="123" name="not-checked"/>
+        //             </div>
+        //         )
+        //     }
+        // })
 
         const individualName = this.state.invoice_data.map((name, i) =>{
             return (
                 <div key={i}>
-                <div>{name.firstname}</div>
-                <div>{name.lastname}</div>
-                <div>{name.emailAddress}</div>
-                <div>{name.billing_address}</div>
-                <div>{name.phone_number}</div>
-                <div>{name.standard_photography ? null : "Standard Photography"}</div>
-                <div>{name.twilight_photography ? null : "Twilight Photography"}</div>
-                <div>{name.drone_photography ? null : "Basic Drone Photography"}</div>
-                <div>{name.cleaning ? null : "Deluxe Drone Photography"}</div>
-                <div>{name.city}</div>
-                <div>{name.state}</div>
-                <div>{name.zip}</div>
-                <div>{name.street_address}</div>
+                <div>First Name: {name.firstname}</div>
+                <div> Last Name: {name.lastname}</div>
+                <div> Email Address: {name.emailAddress}</div>
+                <div> Billing Address: {name.billing_address}</div>
+                <div> Phone Number: {name.phone_number}</div>
+                <div>Add-Ons:
+                    <div>{name.standard_photography ? null : "Standard Photography"} </div>
+                    <div>{name.twilight_photography ? null : "Twilight Photography"} </div>
+                    <div>{name.drone_photography ? null : "Basic Drone Photography"} </div>
+                    <div>{name.cleaning ? null : "Deluxe Drone Photography"} </div>
+                </div>
+                <div>City: {name.city}</div>
+                <div>State: {name.state}</div>
+                <div>Zip: {name.zip}</div>
+                <div>Street Address: {name.street_address}</div>
                 
 
                 </div>
@@ -143,10 +145,11 @@ class Admin extends Component {
     </div>
   </div>
 </div>
-       
-{individualName}
 
-        <div className='admin-boxes'>
+<div>      
+{individualName}
+</div>
+        {/* <div className='admin-boxes'>
         <h4>Standard</h4>
             {getStandard}</div>
 
@@ -160,7 +163,7 @@ class Admin extends Component {
 
         <div className='admin-boxes'>
         <h4>Deluxe Drone</h4>
-            {getCleaning}</div>
+            {getCleaning}</div> */}
     </div>
 
     );
