@@ -109,10 +109,10 @@ class Admin extends Component {
                 <div>{name.emailAddress}</div>
                 <div>{name.billing_address}</div>
                 <div>{name.phone_number}</div>
-                <div>{name.standard_photography ? (<input type="checkbox" checked="checked" value="123" name="checked"/>) : "Standard Photography"}</div>
-                <div>{name.twilight_photography ? (<input type="checkbox" checked="checked" value="123" name="checked"/>) : "Twilight Photography"}</div>
-                <div>{name.drone_photography ? (<input type="checkbox" checked="checked" value="123" name="checked"/>) : "Basic Drone Photography"}</div>
-                <div>{name.cleaning ? (<input type="checkbox" checked="checked" value="123" name="checked"/>) : "Deluxe Drone Photography"}</div>
+                <div>{name.standard_photography ? null : "Standard Photography"}</div>
+                <div>{name.twilight_photography ? null : "Twilight Photography"}</div>
+                <div>{name.drone_photography ? null : "Basic Drone Photography"}</div>
+                <div>{name.cleaning ? null : "Deluxe Drone Photography"}</div>
                 <div>{name.city}</div>
                 <div>{name.state}</div>
                 <div>{name.zip}</div>
