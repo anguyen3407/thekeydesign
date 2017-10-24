@@ -20,7 +20,7 @@ class HomeMobile extends Component {
 <div className='Home-Mobile'>
 <NavMobile/>
 <div className='HOME'>
-<img src='https://i.imgur.com/0SI855p.jpg' width='100%' height='100%'/>
+<img src='https://i.imgur.com/0SI855p.jpg' width='100%' height='100%' alt=''/>
 </div>
     </div>
   );
