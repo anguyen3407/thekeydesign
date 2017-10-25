@@ -99,7 +99,7 @@ a {
   left: 0;
   right: 0;
   height: 250px;
-  width: 400px;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: #434141;
