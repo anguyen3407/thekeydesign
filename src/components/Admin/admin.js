@@ -102,14 +102,18 @@ class Admin extends Component {
         // })
 
         const individualName = this.state.invoice_data.map((name, i) =>{
+            console.log(name.twilight_photography)
             return (
                 <div key={i}>
+                    {i}
+                    <br/>
                 <div>First Name: {name.firstname}</div>
                 <div> Last Name: {name.lastname}</div>
                 <div> Email Address: {name.emailAddress}</div>
                 <div> Billing Address: {name.billing_address}</div>
                 <div> Phone Number: {name.phone_number}</div>
                 <div>Add-Ons:
+                 
                     <div>{name.standard_photography ? null : "Standard Photography"} </div>
                     <div>{name.twilight_photography ? null : "Twilight Photography"} </div>
                     <div>{name.drone_photography ? null : "Basic Drone Photography"} </div>
@@ -146,7 +150,7 @@ class Admin extends Component {
   </div>
 </div>
 
-<div>      
+<div className=''>      
 {individualName}
 </div>
         {/* <div className='admin-boxes'>

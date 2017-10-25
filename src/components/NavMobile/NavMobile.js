@@ -21,7 +21,7 @@ class NavMobile extends Component {
       <div className='mobileNav'>
         <div className='mobileNav-container'>
             <div class="dropdownMobile">
-  <div className="dropdownMobile"> <img src='https://i.imgur.com/tFLr8jN.png' width='70px' height='70px' alt=''/>
+  <div className="dropdownMobile"> <img src='https://i.imgur.com/tFLr8jN.png' width='52px' height='45px' alt=''/>
   <div className="dropdownMobile-content">
   <Link to='/HomeMobile' className='HomeMobile'>&nbsp; &nbsp; &nbsp;Home&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</Link>
   <br></br>
