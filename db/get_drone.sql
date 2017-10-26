@@ -1,3 +1,0 @@
-SELECT *
-FROM Products
-WHERE ID= 4;

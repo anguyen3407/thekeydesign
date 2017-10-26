@@ -111,8 +111,6 @@ this.onToken=this.onToken.bind(this);
 
   render() {
 
-  console.log(this.state)
-
 
     return (
   <div className= 'Prices'>

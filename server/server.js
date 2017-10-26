@@ -166,21 +166,6 @@ app.post('/api/payment', function (req, res, next) {
       zip,
       street_address
     } = req.body.options;
-    // console.log(      
-    //   firstName,
-    //   lastName,
-    //   email_address,
-    //   billing_address,
-    //   phone_number, 
-    //   standard, 
-    //   twilight, 
-    //   drone, 
-    //   house, 
-    //   total, 
-    //   city, 
-    //   state, 
-    //   zip, 
-    //   street_address);
     dbInstance.add_order([      
       firstName,
       lastName,
@@ -216,9 +201,9 @@ app.post('/api/payment', function (req, res, next) {
 // admin page
 
 app.get('/api/admin', (req, res) => {
-  const invoice = app.get('db')
+  // const invoice = app.get('db')
   req.app.get('db').get_invoice([req.body.options]).then(invoices=> {
-    console.log(invoices)
+    // console.log(invoices)
     res.status(200).send(invoices);
   }).catch((err) => (console.log(err)))
 })
@@ -235,7 +220,7 @@ app.get('/api/admin', (req, res) => {
 
 // //cart
 // app.post('/api/product/cart', ctrl.addProducts);
-
+app.delete('/api/admin/:id', ctrl.removeItem);
 
 //NEWCART
 app.post('/api/product/scheduleOrder', ctrl.scheduleOrder);

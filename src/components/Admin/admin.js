@@ -24,82 +24,16 @@ class Admin extends Component {
             })
     }
 
+    removeFromCart(deleteId) {
+        axios.delete(`/api/admin/${deleteId}`).then((res)=> {
+            this.setState({
+                invoice_data: res.data
+            })
+        }).catch(err => console.log(err))
+    }
+
   
     render() {
-
-        // var getStandard = this.state.invoice_data.map((x)=>{
-        //     if(x.standard_photography){
-        //         return(
-        //             <div>
-        //                 <input type="checkbox" checked="checked" value="123" name="checked"/>
-        //             </div>
-        //         )
-        //     }
-        //     else{
-        //         return(
-        //             <div>
-        //                 <input type="checkbox" checked="false" value="123" name="not-checked"/>
-        //             </div>
-        //         )
-        //     }
-        // })
-
-        // var getTwilight = this.state.invoice_data.map((y)=>{
-            
-        //     if(y.twilight_photography){
-
-        //         return(
-        //             <div>
-        //                 <input type="checkbox" checked="checked" value="123" name="checked"/>
-        //             </div>
-        //         )
-        //     }
-        //     else{
-        //         return(
-        //             <div>
-        //                 <input type="checkbox"  value="123" name="not-checked"/>
-        //             </div>
-        //         )
-        //     }
-        // })
-
-        // var getDrone = this.state.invoice_data.map((z)=>{
-            
-        //     if(z.drone_photography){
-
-        //         return(
-        //             <div>
-        //                 <input type="checkbox" checked="checked" value="123" name="checked"/>
-        //             </div>
-        //         )
-        //     }
-        //     else{
-        //         return(
-        //             <div>
-        //                 <input type="checkbox"  value="123" name="not-checked"/>
-        //             </div>
-        //         )
-        //     }
-        // })
- 
-        // var getCleaning = this.state.invoice_data.map((a)=>{
-            
-        //     if(a.cleaning){
-
-        //         return(
-        //             <div>
-        //                 <input type="checkbox" checked="checked" value="123" name="checked"/>
-        //             </div>
-        //         )
-        //     }
-        //     else{
-        //         return(
-        //             <div>
-        //                 <input type="checkbox"  value="123" name="not-checked"/>
-        //             </div>
-        //         )
-        //     }
-        // })
 
         const individualName = this.state.invoice_data.map((name, i) =>{
             console.log(name.twilight_photography)
@@ -123,8 +57,8 @@ class Admin extends Component {
                 <div>State: {name.state}</div>
                 <div>Zip: {name.zip}</div>
                 <div>Street Address: {name.street_address}</div>
-                
-
+                <button onClick = {() => {this.removeFromCart(name.id)}}> DELETE
+                </button>
                 </div>
             )
         })

@@ -9,20 +9,11 @@ class Prices extends Component {
   constructor(){
     super() 
     this.state = {
-      firstName: '',
-      lastName: '',
-      email_address: '',
-      billing_address: '',
-      phone_number: '',
       standard: false,
       twilight: false,
       drone: false,
       house: false,
       total: 675,
-      city: '',
-      state: '',
-      zip: '', 
-      street_address: ''
     }
 
 this.onToken=this.onToken.bind(this);
