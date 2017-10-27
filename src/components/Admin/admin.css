@@ -44,3 +44,39 @@
 .logout-buttontheme:hover {
 	color: lightcoral;
 }
+
+.invoices {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 100%;
+}
+
+.empty-space {
+	width: 100%;
+	height: 80px;
+}
+
+.invoice-box {
+	border: 1px solid rgb(141, 139, 139);
+	padding: 10px;
+	margin: 10px;
+	width: 250px;
+	height: 350px;
+}
+
+.delete {
+	width: 35%;
+	height: 30px;
+	outline: none;
+	letter-spacing: 1px;
+}
+
+.delete:hover {
+	background-color: rgb(189, 184, 184);
+	color: white;
+	border: none;
+}

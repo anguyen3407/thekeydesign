@@ -38,8 +38,10 @@ class Admin extends Component {
         const individualName = this.state.invoice_data.map((name, i) =>{
             console.log(name.twilight_photography)
             return (
+                <div className='invoice-box'>
                 <div key={i}>
-                    {i}
+                    Invoice # {i}
+                    <br/>
                     <br/>
                 <div>First Name: {name.firstname}</div>
                 <div> Last Name: {name.lastname}</div>
@@ -57,8 +59,10 @@ class Admin extends Component {
                 <div>State: {name.state}</div>
                 <div>Zip: {name.zip}</div>
                 <div>Street Address: {name.street_address}</div>
-                <button onClick = {() => {this.removeFromCart(name.id)}}> DELETE
+                <br/>
+                <button className='delete' onClick = {() => {this.removeFromCart(name.id)}}> DELETE
                 </button>
+                </div>
                 </div>
             )
         })
@@ -83,27 +87,11 @@ class Admin extends Component {
     </div>
   </div>
 </div>
-
-<div className=''>      
+<div className='empty-space'></div>
+<div className='invoices'> 
 {individualName}
 </div>
-        {/* <div className='admin-boxes'>
-        <h4>Standard</h4>
-            {getStandard}</div>
-
-        <div className='admin-boxes'>
-        <h4>Twilight</h4>
-            {getTwilight}</div>
-
-        <div className='admin-boxes'>
-        <h4>Basic Drone</h4>
-            {getDrone}</div>
-
-        <div className='admin-boxes'>
-        <h4>Deluxe Drone</h4>
-            {getCleaning}</div> */}
-    </div>
-
+</div>
     );
     }}
 
