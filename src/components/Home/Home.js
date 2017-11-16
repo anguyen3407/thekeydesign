@@ -144,19 +144,14 @@ class Home extends Component {
         </div>
         <div className='testimonial-name'> - Monica McQueen | The McQueen Team</div>
         <br></br>
-      <div className='test-image-container'>
+      {/* <div className='test-image-container'>
        <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Biochem_reaction_arrow_reverse_NNNN_horiz_med.svg/2000px-Biochem_reaction_arrow_reverse_NNNN_horiz_med.svg.png'width='50px' height='50px' className='arrow-left' alt=''/> 
         &nbsp; &nbsp; <div className='testimonial-photo'> <img src='https://i.imgur.com/pSYf8Hu.png'width='100%' height='100%' alt=''/> </div>  &nbsp; &nbsp;    
         <img src='https://userscontent2.emaze.com/images/6e6e87f6-3d18-4d26-af06-c3b9256010d5/30571f71653716854bd1385fa485ae4a.png'width='50px' height='50px' className='arrow-right' alt=''/>
-      </div>
+      </div> */}
       </div>
     </div>
     </div>
-
-
-    <div className='scroll-contain'>
-  <a href="top" className='scroll'><font color='lightcoral'>scroll to top</font></a>
-  </div>
   </div>
  
   < Footer />

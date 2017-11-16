@@ -4,12 +4,6 @@ import { Link } from 'react-router-dom';
 
 
 class Footer extends Component {
-  // constructor () {
-  //   super () 
-  
-  //       }
-      
-  //   }
   
   
 
@@ -20,10 +14,10 @@ class Footer extends Component {
 <div className='footer-container'>
     <div className='footer'>
     <div className='footer-contacts'> 
-    <div className='contactUs'><font color='lightcoral'>CONTACT US </font></div>
-    <div className='footer-title'>THE KEY DESIGN <font color='lightcoral'>|</font> HOME STAGING</div>
-    <div className='phone'>PHONE<font color='lightcoral'>:</font> 801<font color='lightcoral'>.</font>662<font color='lightcoral'>.</font>9117</div>
-    <div className='email'>EMAIL<font color='lightcoral'>:</font> info<font color='lightcoral'>@</font>thekeydesign.com </div>
+    <div className='contactUs'>CONTACT US </div>
+    <div className='footer-title'>THE KEY DESIGN | HOME STAGING</div>
+    <div className='phone'>PHONE: 801.662.9117</div>
+    <div className='email'>EMAIL: info@thekeydesign.com </div>
    </div>
    <div className='footer-logo'>
      <img src='https://i.imgur.com/nZbkoSd.png' className='footer-img' alt=''/>

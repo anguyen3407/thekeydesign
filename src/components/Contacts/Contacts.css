@@ -1,91 +1,179 @@
-.ContactsImgContainer {
-    width: 100%;
-    height: 735px;
-    background-image: url('https://i.imgur.com/dxYd4j6.jpg');
-    background-size: 100% 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-}
-
-.contacts-words {
-    margin: 60px 0 0 60px;
-    width: 50%;
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-end;
-    align-content: flex-end;
-    color: white;
-    letter-spacing: 3px;
-    font-size: 46px;
-    text-shadow: -1px 0 rgba(255, 255, 255, 0.55);
-}
-
-.giant-box {
+.ContactsPage {
     width: 100%;
     height: auto;
+}
+.contactsContainer {
+    width: 100%;
+    height: 65vh;
+    margin-top: 140px;
+}
+
+.contactimage {
+    width: 50%;
+    height: 80%;
+    float: left;
+}
+
+.contactinfo {
+    width: 49.5%;
+    height: 80%;
+    float: right;
+}
+
+.contactus {
+    width: 100%;
+    height: 10%;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.img-flex {
+    width: 80%;
+    height: 90%;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
+    float: right;
+}
+
+        .flex1 {
+            width: 80px;
+            height: 80px;
+            margin: 5px 15px 5px 20px;
+            background-image: url('https://i.imgur.com/N6NBUdc.jpg');
+            background-size: cover;
+        }
+
+        .flex2 {
+            width: 80px;
+            height: 80px;
+            margin: 5px 15px 5px 20px;
+            background-image: url('https://i.imgur.com/9JG2np8.jpg');
+            background-size: cover;
+        }
+
+        .flex3 {
+            width: 80px;
+            height: 80px;
+            margin: 5px 15px 5px 20px;
+            background-image: url('https://i.imgur.com/wWaaKef.jpg');
+            background-size: cover;
+        }
+
+        .flex4 {
+            width: 80px;
+            height: 80px;
+            margin: 5px 15px 5px 20px;
+            background-image: url('https://i.imgur.com/TyWNHyP.jpg');
+            background-size: cover;
+        }
+
+        .flex5 {
+            width: 80px;
+            height: 80px;
+            margin: 5px 15px 5px 20px;
+            background-image: url('https://i.imgur.com/HYPZFZO.jpg');
+            background-size: cover;
+        }
+
+        .flex6 {
+            width: 80px;
+            height: 80px;
+            margin: 5px 15px 5px 20px;
+            background-image: url('https://i.imgur.com/XVZ8Rki.jpg');
+            background-size: cover;
+        }
+
+        .flex7 {
+            width: 80px;
+            height: 80px;
+            margin: 5px 15px 5px 20px;
+            background-image: url('https://i.imgur.com/MFPxwJw.jpg');
+            background-size: cover;
+        }
+
+        .flex8 {
+            width: 80px;
+            height: 80px;
+            margin: 5px 15px 5px 20px;
+            background-image: url('https://i.imgur.com/xbkV3LZ.jpg');
+            background-size: cover;
+        }
+
+        .flex9 {
+            width: 80px;
+            height: 80px;
+            margin: 5px 15px 5px 20px;
+            background-image: url('https://i.imgur.com/vTt2WWI.jpg');
+            background-size: cover;
+        }
+
+.contactimgbox {
+    width: 70%;
+    height: 100%;
+    float: right;
+    border-right: 1px solid black;
+}
+
+.contactinfobox {
+    width: 70%;
+    height: 100%;
+    padding-left: 40px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: center;
 }
 
 .contacts_box_container {
-    width: 30%;
-    height: 80%;
-    margin: 10px 0 40px 18%;
-    background-color: rgb(255, 255, 255);
-    font-size: 18px;
-    letter-spacing: 2px;
-    outline-style: none;
-    color: #6E6D6D;
-    padding: 40px;
-    border: none;
+    width: 85%;
+    height: 50%;
+    float: right;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding-top: 10px;
 }
 
-.contacts_box_container2 {
-    width: 20%;
-    height: 230px;
-    margin: 10px 0 0px 30px;
-    background-color: rgb(255, 255, 255);
-    font-size: 18px;
-    letter-spacing: 2px;
-    outline-style: none;
-    color: #6E6D6D;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    align-content: flex-start;
+.myemail {
+    width: 85%;
+    height: 14%;
 }
 
-.contacts_box_container2 input {
+.enteremail {
+    width: 85%;
+    height: 14%;
+}
+
+.messagetextarea-container2-box2 {
     width: 100%;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid #838181;
-    background-color: rgba(255, 255, 255, 0);
-    outline-style: none;
-    font-size: 18px;
-    padding-bottom: 0;
+    height: 50%;
+    border: none;
+    color: black;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.349);
+    outline: none;
+    letter-spacing: 2px;
+}
+
+.messageInput-container2-box1 {
+    font-size: 14px;
+    width: 100%;
+    height: 50%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.349);
+    outline: none;
+    letter-spacing: 2px;
 }
 
 .send-btn {
     width: 100px;
     height: 30px;
-    margin-left: 180px;
-    background-color: #D4D1D1;
+    margin-top: 10px;
+    background-color: white;
     outline-style: none;
     border: 0.5px solid #838181;
     letter-spacing: 2px;
@@ -96,4 +184,4 @@
     color: white;
     font-weight: lighter;
     letter-spacing: 3px;
-}
+} 

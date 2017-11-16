@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Nav from '../Nav/Nav';
 
 
 class Hatfield extends Component {
@@ -16,6 +17,7 @@ class Hatfield extends Component {
       return (
   
   <div className= 'hatfield'>
+  <Nav/>
       <div className= 'wrapper'>
         <div className='box box1'>  <img src="https://i.imgur.com/N6NBUdc.jpg" width='100%' height='100%' alt="Cute cat"/></div>
         <div className='box box2'> <img src="https://i.imgur.com/9JG2np8.jpg" width='100%' height='100%' alt="Cute cat"/> </div>

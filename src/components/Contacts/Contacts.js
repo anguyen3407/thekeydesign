@@ -49,41 +49,56 @@ class Contacts extends Component {
   render() {
 
     return (
-
-      <div className='Contacts'>
+      <div className='ContactsPage'>
             <Nav/>
-        <div className='ContactsImgContainer'> 
-            <h1 className='contacts-words'>CONTACT US</h1>
-            <div className='contactsBox'>
+            <div className='contactsContainer'>
+            <div className='contactimage'>
+              <div className='contactimgbox'>
+              <div className='img-flex'>
+              <div className='contactus'>CONTACT US</div>
+                  <div className='flex1'></div>
+                  <div className='flex2'></div>
+                  <div className='flex3'></div>
+                  <div className='flex4'></div>
+                  <div className='flex5'></div>
+                  <div className='flex6'></div>
+                  <div className='flex7'></div>
+                  <div className='flex8'></div>
+                  <div className='flex9'></div>
+                </div>
               </div>
-              <div className='giant-box'>
-              <textarea
-              rows="14" cols="10" wrap="hard"
-                placeholder='Your message here'
-                type='text'
-                className='contacts_box_container'
-                value={this.state.message}
-                onChange={(e) => { this.toggleMessage(e.target.value) }} />
-                <div className='contacts_box_container2'>
-                <input
+            </div>
+            <div className='contactinfo'>
+              <div className='contactinfobox'>
+              <div className='myemail'>
+              <input
                   type='text'
                   className='messagetextarea-container2-box2'
                   value={this.state.email}
                   onChange={(e) => { this.toggleEmail(e.target.value) }} />
+              </div>
+              <div className='enteremail'>
                 <input
-                  placeholder='Your Email'
+                  placeholder='Email'
                   type='text'
                   className='messageInput-container2-box1'
                   value={this.state.user_email}
                   onChange={(e) => { this.toggleName(e.target.value) }} />
-                <div className='messageInput-container2-box3'>
+              </div>
+                <textarea
+                rows="14" cols="10" wrap="hard"
+                  placeholder='Message'
+                  type='text'
+                  className='contacts_box_container'
+                  value={this.state.message}
+                  onChange={(e) => { this.toggleMessage(e.target.value) }} />
                   <button className='send-btn' onClick={()=>{
                     this.sendEmail()
-                  }} >SEND</button>
-                </div>
-                </div>
-                </div>
-        </div>
+                    }} >SEND
+                  </button>
+              </div>
+            </div>
+            </div>
         <Footer />
       </div>
 
