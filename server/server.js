@@ -98,6 +98,7 @@ app.post('/api/sendEmail', (req, res) => {
     }
   })
   const {user_email, email, message} = req.body;
+  console.log('transport', transporter);
   var mailOptions = {
     from: req.body.email,
     to: 'a.nguyen8778@yahoo.com',
@@ -105,7 +106,7 @@ app.post('/api/sendEmail', (req, res) => {
     text: "you have a submission with the following details ... From: " +req.body.user_email+ "To:" +req.body.email+ "Message:" +req.body.message,
     html: '<ul ><li>From: '+req.body.user_email+'</li><li>To: '+req.body.email+'</li><li>Message: <p>'+req.body.message+'</p></li></ul>'
   };
-  console.log(mailOptions)
+  console.log('mailOptions', mailOptions)
   transporter.sendMail(mailOptions, function (error, response) {
     if (error) {
       console.log(error);

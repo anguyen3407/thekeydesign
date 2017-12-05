@@ -9,7 +9,7 @@ class Contacts extends Component {
     super()
     this.state = {
       user_email: "",
-      email: 'info@thekeydesign.com',
+      email: 'a.nguyen8778@yahoo.com',
       message: ""
     }
   }
@@ -72,11 +72,7 @@ class Contacts extends Component {
             <div className='contactinfo'>
               <div className='contactinfobox'>
               <div className='myemail'>
-              <input
-                  type='text'
-                  className='messagetextarea-container2-box2'
-                  value={this.state.email}
-                  onChange={(e) => { this.toggleEmail(e.target.value) }} />
+              <div className='messagetextarea-container2-box2'>info@thekeydesign.com</div>
               </div>
               <div className='enteremail'>
                 <input
