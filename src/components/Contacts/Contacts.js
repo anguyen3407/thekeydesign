@@ -26,10 +26,22 @@ class Contacts extends Component {
     });
   }
 
+  toggleRefreshEmail() {
+    this.setState({
+      user_email: ''
+    })
+  }
+
   toggleMessage(message) {
     this.setState({
       message
-    });
+    })
+  }
+
+  toggleRefreshMessage() {
+    this.setState({
+      message: ''
+    })
   }
 
 
@@ -40,7 +52,7 @@ class Contacts extends Component {
       'message': this.state.message
     }).catch((err) => {
       console.log(err);
-      alert('Email Sent!', err);
+      alert('Error', err);
     })
   }
 
@@ -88,10 +100,10 @@ class Contacts extends Component {
                   type='text'
                   className='contacts_box_container'
                   value={this.state.message}
-                  onChange={(e) => { this.toggleMessage(e.target.value) }} />
+                  onChange={(e) => { this.toggleMessage(e.target.value) }}/>
                   <button className='send-btn' onClick={()=>{
-                    this.sendEmail()
-                    }} >SEND
+                    this.sendEmail(); this.toggleRefreshEmail(); this.toggleRefreshMessage()
+                    }}> SEND
                   </button>
               </div>
             </div>
