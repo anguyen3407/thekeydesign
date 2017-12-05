@@ -56,15 +56,16 @@ class Contacts extends Component {
               <div className='contactimgbox'>
               <div className='img-flex'>
               <div className='contactus'>CONTACT US</div>
-                  <div className='flex1'></div>
-                  <div className='flex2'></div>
+              <div className='imgs'> <img src='https://imgur.com/vTKug78.jpg' width='100%' height='100%' alt=''/></div>
+                  {/* <div className='flex1'> </div> */}
+                  {/* <div className='flex2'></div>
                   <div className='flex3'></div>
                   <div className='flex4'></div>
                   <div className='flex5'></div>
                   <div className='flex6'></div>
                   <div className='flex7'></div>
                   <div className='flex8'></div>
-                  <div className='flex9'></div>
+                  <div className='flex9'></div> */}
                 </div>
               </div>
             </div>

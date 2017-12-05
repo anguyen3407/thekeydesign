@@ -9,8 +9,8 @@
 }
 
 .contactimage {
-    width: 50%;
-    height: 80%;
+    width: 45%;
+    height:75%;
     float: left;
 }
 
@@ -25,18 +25,22 @@
     height: 10%;
     font-size: 30px;
     letter-spacing: 3px;
-    margin-bottom: 10px;
-    margin-left: 20px;
+}
+
+.imgs {
+    width: 100%;
+    height: 75%;
+    padding-right:60px;
 }
 
 .img-flex {
-    width: 80%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     float: right;
 }
-
+/* 
         .flex1 {
             width: 80px;
             height: 80px;
@@ -107,10 +111,10 @@
             margin: 5px 15px 5px 20px;
             background-image: url('https://i.imgur.com/vTt2WWI.jpg');
             background-size: cover;
-        }
+        } */
 
 .contactimgbox {
-    width: 70%;
+    width: 60%;
     height: 100%;
     float: right;
     border-right: 1px solid black;
@@ -119,7 +123,6 @@
 .contactinfobox {
     width: 70%;
     height: 100%;
-    padding-left: 40px;
     display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -177,6 +180,7 @@
     outline-style: none;
     border: 0.5px solid #838181;
     letter-spacing: 2px;
+    border-radius: 0;
 }
 
 .send-btn:hover {
@@ -184,4 +188,5 @@
     color: white;
     font-weight: lighter;
     letter-spacing: 3px;
+    border: none;
 } 

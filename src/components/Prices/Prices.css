@@ -58,6 +58,10 @@
     color: rgba(243, 237, 237, 0.47);
 }
 
+.cart:active {
+ color: rgba(240, 128, 128, 0.548);
+}
+
 .prices-banner {
     width: 100%;
     height: 450px;
@@ -76,8 +80,17 @@
     margin: 0;
 }
 
-.nav-contacts:hover {
+.na-contacts {
+    font-size: 12px;
+    padding-top: 2px;
+}
+
+.na-contacts:hover {
     color: lightcoral;
+}
+
+.na-contacts:active {
+    color: white;
 }
 
 .basic-package-description {
@@ -225,7 +238,6 @@
 }
 
 .clickbuttons {
-    margin-top: 5px;
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0);
@@ -242,9 +254,9 @@
     color: white;
 }
 
-.clickbuttoncontainer {
-    width: 100%;
-    height: 30.5%;
+.clickbuttons:active {
+    color: rgba(255, 255, 255, 0.555);
+    border: 1px solid rgba(255, 255, 255, 0.555);
 }
 
 .orders-checked {
@@ -264,4 +276,26 @@
     outline: none;
     color: lightcoral;
     font-size: 8px;
+}
+
+.removebuttons:hover {
+    color: black;
+}
+
+.removebuttons:active {
+    color: rgba(255, 255, 255, 0.555);
+}
+
+.contact-link {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -130,17 +130,23 @@ this.onToken=this.onToken.bind(this);
     <h1 className='price-coral'>$150</h1>
     <br></br>
       <div className='description'><center>Standard lighting of Interior & exterior photography of the home. 
-      Including up to 25 images.</center></div>
-      <div className='clickbuttoncontainer'>
+      Including up to 25 images.
+      <br></br>
+      <br></br>
+      <br></br>
+      </center></div>
       <input type="button" className='clickbuttons' value='ADD TO CART' onClick={()=> {this.toggleCheckboxStandard()}}/>
-  </div>
   </div>
   <div className='box boxFour'>
     <h2 className='price-titles'><center>TWILIGHT PHOTOGRAPHY</center></h2>
     <h1 className='price-coral'>$350</h1>
     <br></br>
     <div className='description'><center>Dusk photography of interior & exterior of the home. 
-      Including up to 50 images. </center></div>
+      Including up to 50 images. 
+      <br></br>
+      <br></br>
+      <br></br>
+      </center></div>
       <input type="button" className='clickbuttons' value='ADD TO CART' onClick={()=> {this.toggleCheckboxTwilight()}}/>
   </div>
   <div className='box boxFive'></div>
@@ -150,7 +156,11 @@ this.onToken=this.onToken.bind(this);
     <h1 className='price-coral'>$350</h1>
     <br></br>
     <div className='description'><center>Video of exterior and surrounding area of property. 
-      Includes music license, video and audio editing.</center></div>
+      Includes music license, video and audio editing.
+      <br></br>
+      <br></br>
+      <br></br>
+      </center></div>
       <input type="button" className='clickbuttons' value='ADD TO CART' onClick={()=> {this.toggleCheckboxDrone()}}/>
   </div>
   <div className='box boxEight'>
@@ -161,7 +171,8 @@ this.onToken=this.onToken.bind(this);
     <br></br>
 
     <div className='description'><center>Interior & exterior video including music license, video & audio editing. 
-      Voiceover & text, along with high end vehicles as props included.</center></div>
+      Voiceover & text, along with high end vehicles as props included.
+      </center></div>
       <input type="button" className='clickbuttons' value='ADD TO CART' onClick={()=> {this.toggleCheckboxHouse()}}/>
   </div>
   <div className='box boxNine'>
@@ -172,11 +183,11 @@ this.onToken=this.onToken.bind(this);
           Our professional design team can help with interior design needs for Businesses, Residential, New Builds, Parade of Homes, etc.</center>
           <br></br>
           - Interior Design Consultation | &nbsp;<b><font color='lightcoral'>$75/hr</font></b>
+          <br></br>
+          <br></br>
+          <br/>
           </div>
-        <br></br>
-        <br></br>
-          <div className="contact-link">- <Link to='/contacts' className='nav-contacts'> <b>CONTACT US</b></Link></div> for pricing
-
+          <div className="contact-link"> - <Link to='/contacts' className='na-contacts'> <b>CONTACT US</b></Link> &nbsp;for pricing</div>
   </div>
   </div>
   <Footer />

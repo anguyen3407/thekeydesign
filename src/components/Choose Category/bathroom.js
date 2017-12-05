@@ -3,13 +3,30 @@ import './chooseCategory.css';
 
 
 class Bathroom extends Component {
-    // constructor () {
-    //   super () 
-    
-    //       }
-        
-    //   }
-    
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
     
   
     render() {

@@ -2,14 +2,33 @@ import React, { Component } from 'react';
 import './chooseCategory.css';
 
 class Kitchen extends Component {
-    // constructor () {
-    //   super () 
-    
-    //       }
-        
-    //   }
-    
-    
+  // https://imgur.com/5y7DYhJ
+  // https://imgur.com/BHMUVdv
+  // https://imgur.com/dVtZKRm
+  // https://imgur.com/IlvLkXa
+  // https://imgur.com/6T13Q5J
+  // https://imgur.com/QhGBwGt
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+
   
     render() {
   

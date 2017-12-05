@@ -23,38 +23,30 @@ import Bathroom from './components/Choose Category/bathroom';
 import LivingRoom from './components/Choose Category/livingRoom';
 import Admin from './components/Admin/admin';
 import Cart from './components/Cart/cart';
-import HomeMobile from './components/HomeMobile/HomeMobile';
-import ContactsMobile from './components/ContactsMobile/ContactsMobile';
-import PricesMobile from './components/PricesMobile/PricesMobile';
-import AboutMobile from './components/AboutMobile/AboutMobile';
 
 export default (
     <Switch>
         <Route exact path='/' component={ Home } />
         <Route path="/whatWeAre" component={ What } /> 
-    <Route path="/contacts" component={ Contacts } />
-    <Route path="/prices" component={ Prices } />
-    <Route path='/harvest' component={ Harvest }/>
-    <Route path="/anderson" component={ Anderson } />
-    <Route path="/ann" component={ Ann } />
-    <Route path="/cindy" component={ Cindy } />
-    <Route path="/crowley" component={ Crowley } />
-    <Route path="/enoch" component={ Enoch } />
-    <Route path="/hatfield" component={ Hatfield } />
-    <Route path="/jackson" component={ Jackson } />
-    <Route path="/miller" component={ Miller } />
-    <Route path="/nicholaus" component={ Nicholaus } />
-    <Route path="/sacs" component={ Sacs } />
-    <Route path="/westgate" component={ Westgate } />
-    <Route path="/kitchen" component={Kitchen}/>
-    <Route path="/bedroom" component={Bedroom}/>
-    <Route path="/bathroom" component={Bathroom}/>
-    <Route path="/living-family-room" component={LivingRoom}/>
-    <Route path='/admin' component={Admin}/>
-    <Route path='/cart' component={Cart}/>
-    <Route path='/HomeMobile' component={HomeMobile}/>
-    <Route path='/AboutMobile' component={AboutMobile}/>
-    <Route path='/ContactsMobile' component={ContactsMobile}/>
-    <Route path='/PricesMobile' component={PricesMobile}/>
+        <Route path="/contacts" component={ Contacts } />
+        <Route path="/prices" component={ Prices } />
+        <Route path='/harvest' component={ Harvest }/>
+        <Route path="/anderson" component={ Anderson } />
+        <Route path="/ann" component={ Ann } />
+        <Route path="/cindy" component={ Cindy } />
+        <Route path="/crowley" component={ Crowley } />
+        <Route path="/enoch" component={ Enoch } />
+        <Route path="/hatfield" component={ Hatfield } />
+        <Route path="/jackson" component={ Jackson } />
+        <Route path="/miller" component={ Miller } />
+        <Route path="/nicholaus" component={ Nicholaus } />
+        <Route path="/sacs" component={ Sacs } />
+        <Route path="/westgate" component={ Westgate } />
+        <Route path="/kitchen" component={Kitchen}/>
+        <Route path="/bedroom" component={Bedroom}/>
+        <Route path="/bathroom" component={Bathroom}/>
+        <Route path="/living-family-room" component={LivingRoom}/>
+        <Route path='/admin' component={Admin}/>
+        <Route path='/cart' component={Cart}/>
   </Switch>
 )
