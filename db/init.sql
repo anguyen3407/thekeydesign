@@ -27,3 +27,12 @@
 -- name VARCHAR(34),
 -- auth_id VARCHAR(34),
 -- isadmin VARCHAR(150);
+
+-- UPDATE users
+-- SET isadmin = 'true'
+-- where id = 2;
+
+-- select * from users;
+
+-- delete from users
+-- where id = 2;

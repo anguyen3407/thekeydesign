@@ -25,7 +25,7 @@ class Home extends Component {
     <div className='nav-container'>
     <Link to='/' className='nav-home'>HOME</Link>
       <Link to='/whatWeAre' className='nav-who'> ABOUT </Link>
-      <Link to='/contacts' className='nav-contacts'>CONTACTS</Link>
+      <Link to='/contacts' className='nav-contacts'>CONTACT US</Link>
       <Link to='/prices' className='nav-prices'>PRICES / SERVICES</Link>
       {/* <Link to='/' className='nav-testimonials'>TESTIMONIALS</Link> */}
       <a className='auth0' href={'/auth' }>
