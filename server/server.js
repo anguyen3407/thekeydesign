@@ -10,7 +10,8 @@ const express = require('express'),
   ctrl = require('../src/controller/productController'),
   nodemailer = require('nodemailer'), 
   passport = require('passport'), 
-  Auth0Strategy = require('passport-auth0');
+  Auth0Strategy = require('passport-auth0')
+  isAdmin = require('./middleware/isAdmin');
 
 
 
@@ -201,7 +202,7 @@ app.post('/api/payment', function (req, res, next) {
 
 // admin page
 
-app.get('/api/admin', (req, res) => {
+app.get('/api/admin', isAdmin, (req, res) => {
   // const invoice = app.get('db')
   req.app.get('db').get_invoice([req.body.options]).then(invoices=> {
     // console.log(invoices)

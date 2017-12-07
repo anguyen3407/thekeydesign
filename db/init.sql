@@ -25,4 +25,5 @@
 -- CREATE TABLE IF NOT EXISTS users
 -- (id SERIAL PRIMARY KEY,
 -- name VARCHAR(34),
--- auth_id VARCHAR(34));
+-- auth_id VARCHAR(34),
+-- isadmin VARCHAR(150);
