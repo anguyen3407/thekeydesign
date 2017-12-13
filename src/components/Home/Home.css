@@ -21,6 +21,13 @@ body {
   background-size: cover;
 }
 
+@media (max-width: 1000px) {
+  .banner {
+    background-image: url('https://imgur.com/vz4ZqQi.jpg');
+    background-size: cover;
+  }
+}
+
 .banner-img {
   padding: 50px 130px 0px 210px;
 }
